@@ -1,0 +1,13 @@
+X   Fix Noria flickering support objects
+    Noria texture mapping
+    Noria texture
+    Properly implement Noria block & TE
+    Adjust TESR Noria behavior
+    Noria sounds
+    
+    NEXT
+    Creosote -> Coke Oven ?
+    Water Canal
+    Water Gutter
+    Water Reservoir
+    Overshot Waterwheel
