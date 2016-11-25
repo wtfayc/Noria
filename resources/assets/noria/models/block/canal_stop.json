@@ -1,0 +1,23 @@
+{
+    "__comment": "Model generated using MrCrayfish's Model Creator (http://mrcrayfish.com/modelcreator/)",
+"ambientocclusion": false,
+    "textures": {
+        "particle": "blocks/blocks/blocks/blocks/blocks/blocks/blocks/stone",
+        "0": "blocks/brick"
+    },
+    "elements": [
+        {
+            "name": "STOP",
+            "from": [ 3.0, 4.0, 0.0 ], 
+            "to": [ 13.0, 16.0, 3.0 ], 
+            "faces": {
+                "north": { "texture": "#0", "uv": [ 2.0, 0.0, 12.0, 12.0 ] },
+                "east": { "texture": "#-1", "uv": [ 0.0, 0.0, 12.0, 3.0 ] },
+                "south": { "texture": "#0", "uv": [ 3.0, 0.0, 13.0, 12.0 ] },
+                "west": { "texture": "#-1", "uv": [ 0.0, 0.0, 3.0, 12.0 ] },
+                "up": { "texture": "#0", "uv": [ 3.0, 0.0, 13.0, 3.0 ] },
+                "down": { "texture": "#-1", "uv": [ 0.0, 0.0, 10.0, 3.0 ] }
+            }
+        }
+    ]
+}

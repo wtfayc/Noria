@@ -1,0 +1,50 @@
+{
+  "forge_marker": 1,
+  "defaults": { "model": "noria:canal_base" },
+  "variants": 
+{
+"normal": [{}],
+    "inventory": [{}],
+    "north": 
+	{
+	"true": {},
+	"false": 
+		{
+		"submodel": 
+			{
+			"side0": { "model": "noria:canal_stop" }
+			}
+		}
+	},
+"south": 
+	{
+	"true": {},
+	"false": {
+		"submodel": 
+			{
+			"side1": { "model": "noria:canal_stop", "y": 180 }
+			}
+		}
+},
+"west": 
+	{
+	"true": {},
+	"false": {
+		"submodel": 
+			{
+			"side2": { "model": "noria:canal_stop", "y": 270 }
+			}
+		}
+},
+"east": 
+	{
+	"true": {},
+	"false": {
+		"submodel": 
+			{
+			"side3": { "model": "noria:canal_stop", "y": 90 }
+			}
+		}
+}
+}
+}

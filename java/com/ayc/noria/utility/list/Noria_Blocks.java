@@ -9,6 +9,7 @@ import net.minecraft.creativetab.CreativeTabs;
 
 public enum Noria_Blocks {
 
+	CANAL (Material.ROCK, "canal", "canal", 2.0F, 10.0F, Noria_CreativeTabs.NORIA_BASE_TAB, SoundType.STONE), //TODO Values
 	TEST (Material.WOOD, "test", "test", 2.0F, 10.0F, Noria_CreativeTabs.NORIA_BASE_TAB, SoundType.WOOD),
 	TEST2 (Material.WOOD, "test2", "test2", 2.0F, 10.0F, Noria_CreativeTabs.NORIA_BASE_TAB, SoundType.WOOD),
 	
@@ -33,6 +34,6 @@ public enum Noria_Blocks {
 		this.resistance = resistance;
 		this.creativeTabs = creativeTabs;
 		this.soundType = soundType;
-		this.nameItemBlock = "ItemBlock_" + this.name;		
+		this.nameItemBlock = "ItemBlock_" + this.name;	
 	}
 }

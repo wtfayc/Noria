@@ -6,8 +6,22 @@ X   Fix Noria flickering support objects
     Noria sounds
     
     NEXT
-    Creosote -> Coke Oven ?
+    Turpentine from pine trees
+    Pine wood tar from tar kiln
     Water Canal
     Water Gutter
     Water Reservoir
     Overshot Waterwheel
+    
+    LONG RUN
+    Water effects
+    Tympanon
+    Steam
+    Modular Armor
+    Brick kiln
+    Metallurgy that makes sense
+    
+    COMPAT
+    Forestry Wax
+    Railcraft Creosote
+    Immersive Eng Creosote

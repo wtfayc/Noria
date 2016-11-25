@@ -33,13 +33,16 @@ public class ClientProxy extends CommonProxy{
 	private void initRenderBlocks()
 	{
 		RenderItem renderItem = Minecraft.getMinecraft().getRenderItem();
-		
+
 		ModelLoader.setCustomModelResourceLocation((Item)RegBlocks.iblock_test, 0, new ModelResourceLocation(Noria_Blocks.TEST.nameRegistry, "inventory"));
 		renderItem.getItemModelMesher().register((Item)RegBlocks.iblock_test, 0, new ModelResourceLocation(Noria_Blocks.TEST.nameRegistry, "inventory"));
 		
 		ModelLoader.setCustomModelResourceLocation((Item)RegBlocks.iblock_test2, 0, new ModelResourceLocation(Noria_Blocks.TEST2.nameRegistry, "inventory"));
 		renderItem.getItemModelMesher().register((Item)RegBlocks.iblock_test2, 0, new ModelResourceLocation(Noria_Blocks.TEST2.nameRegistry, "inventory"));
 		
+		ModelLoader.setCustomModelResourceLocation((Item)RegBlocks.iblock_canal, 0, new ModelResourceLocation(Noria_Blocks.CANAL.nameRegistry, "inventory"));
+		renderItem.getItemModelMesher().register((Item)RegBlocks.iblock_canal, 0, new ModelResourceLocation(Noria_Blocks.CANAL.nameRegistry, "inventory"));
+
 	}
 	
 	private void initRenderTileEntities()
