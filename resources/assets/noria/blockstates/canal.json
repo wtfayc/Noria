@@ -1,50 +1,101 @@
 {
-  "forge_marker": 1,
-  "defaults": { "model": "noria:canal_base" },
-  "variants": 
+"forge_marker": 1,
+"defaults": { "model": "noria:canal_base" },
+"variants": 
 {
 "normal": [{}],
-    "inventory": [{}],
-    "north": 
-	{
-	"true": {},
-	"false": 
-		{
-		"submodel": 
-			{
-			"side0": { "model": "noria:canal_stop" }
-			}
-		}
-	},
+"inventorya": 
+[{
+"model": "noria:canal_inventory", 
+"textures": {"0": "blocks/stonebrick"}
+}],
+"inventoryb": 
+[{
+"model": "noria:canal_inventory", 
+"textures": {"0": "blocks/stonebrick_mossy"}
+}],
+"inventoryc": 
+[{
+"model": "noria:canal_inventory", 
+"textures": {"0": "blocks/sandstone_smooth"}
+}],
+"inventoryd": 
+[{
+"model": "noria:canal_inventory", 
+"textures": {"0": "blocks/sandstone_carved"}
+}],
+"inventorye": 
+[{
+"model": "noria:canal_inventory", 
+"textures": {"0": "blocks/red_sandstone_smooth"}
+}],
+"inventoryf": 
+[{
+"model": "noria:canal_inventory", 
+"textures": {"0": "blocks/red_sandstone_carved"}
+}],
+"inventoryg": 
+[{
+"model": "noria:canal_inventory", 
+"textures": {"0": "blocks/brick"}
+}],
+"inventoryh": 
+[{
+"model": "noria:canal_inventory", 
+"textures": {"0": "blocks/nether_brick"}
+}],
+"north": 
+{
+"true": {},
+"false": 
+{
+"submodel": 
+{
+"side0": { "model": "noria:canal_stop" }
+}
+}
+},
 "south": 
-	{
-	"true": {},
-	"false": {
-		"submodel": 
-			{
-			"side1": { "model": "noria:canal_stop", "y": 180 }
-			}
-		}
+{
+"true": {},
+"false": {
+"submodel": 
+{
+"side1": { "model": "noria:canal_stop", "y": 180 }
+}
+}
 },
 "west": 
-	{
-	"true": {},
-	"false": {
-		"submodel": 
-			{
-			"side2": { "model": "noria:canal_stop", "y": 270 }
-			}
-		}
+{
+"true": {},
+"false": {
+"submodel": 
+{
+"side2": { "model": "noria:canal_stop", "y": 270 }
+}
+}
 },
 "east": 
-	{
-	"true": {},
-	"false": {
-		"submodel": 
-			{
-			"side3": { "model": "noria:canal_stop", "y": 90 }
-			}
-		}
+{
+"true": {},
+"false": {
+"submodel": 
+{
+"side3": { "model": "noria:canal_stop", "y": 90 }
 }
+}
+},
+"meta": 
+{
+0: { "textures": {"0": "blocks/stonebrick", "particle": "blocks/stonebrick"}},
+1: { "textures": {"0": "blocks/stonebrick_mossy", "particle": "blocks/stonebrick_mossy"}},
+2: { "textures": {"0": "blocks/sandstone_smooth", "particle": "blocks/sandstone_smooth"}},
+3: { "textures": {"0": "blocks/sandstone_carved", "particle": "blocks/sandstone_carved"}},
+4: { "textures": {"0": "blocks/red_sandstone_smooth", "particle": "blocks/red_sandstone_smooth"}},
+5: { "textures": {"0": "blocks/red_sandstone_carved", "particle": "blocks/red_sandstone_carved"}},
+6: { "textures": {"0": "blocks/brick", "particle": "blocks/brick"}},
+7: { "textures": {"0": "blocks/nether_brick", "particle": "blocks/nether_brick"}}
+}
+
 }
 }

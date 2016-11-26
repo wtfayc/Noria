@@ -2,7 +2,7 @@ package com.ayc.noria.handler.registry;
 
 import com.ayc.noria.block.test_block;
 import com.ayc.noria.block.test_block2;
-import com.ayc.noria.block.waterstuff.Canal;
+import com.ayc.noria.block.waterstuff.Block_Canal;
 import com.ayc.noria.item.Noria_ItemBlock;
 import com.ayc.noria.utility.list.Noria_Blocks;
 
@@ -16,7 +16,7 @@ public class RegBlocks {
 	public static final ItemBlock iblock_test = new Noria_ItemBlock(block_test);
 	public static final Block block_test2 = new test_block2();
 	public static final ItemBlock iblock_test2 = new Noria_ItemBlock(block_test2);
-	public static final Block block_canal = new Canal();
+	public static final Block block_canal = new Block_Canal();
 	public static final ItemBlock iblock_canal = new Noria_ItemBlock(block_canal);
 	
 	public static void preInit()
