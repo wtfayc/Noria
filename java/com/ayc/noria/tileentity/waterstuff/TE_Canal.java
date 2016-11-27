@@ -8,7 +8,7 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 
 import com.ayc.noria.API.ITransferWater;
-import com.ayc.noria.block.waterstuff.Block_Canal;
+import com.ayc.noria.block.water.Block_Canal;
 import com.ayc.noria.tileentity.Noria_TileEntity;
 import com.ayc.noria.utility.Helper_Log;
 import com.ayc.noria.utility.Reference_Dynamic;

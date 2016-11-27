@@ -57,6 +57,36 @@ public class ClientProxy extends CommonProxy{
 		ModelLoader.setCustomModelResourceLocation((Item)RegBlocks.iblock_canal, 7, new ModelResourceLocation(Noria_Blocks.CANAL.nameRegistry, "inventoryh"));
 		renderItem.getItemModelMesher().register((Item)RegBlocks.iblock_canal, 7, new ModelResourceLocation(Noria_Blocks.CANAL.nameRegistry, "inventoryh")); 
 
+		ModelLoader.setCustomModelResourceLocation((Item)RegBlocks.iblock_ceramicjar, 0, new ModelResourceLocation(Noria_Blocks.CERAMICJAR.nameRegistry, "inventory"));
+		renderItem.getItemModelMesher().register((Item)RegBlocks.iblock_ceramicjar, 0, new ModelResourceLocation(Noria_Blocks.CERAMICJAR.nameRegistry, "inventory"));
+		
+		ModelLoader.setCustomModelResourceLocation((Item)RegBlocks.iblock_scorchedwood, 0, new ModelResourceLocation(Noria_Blocks.SCORCHEDWOOD.nameRegistry, "inventorya"));
+		renderItem.getItemModelMesher().register((Item)RegBlocks.iblock_scorchedwood, 0, new ModelResourceLocation(Noria_Blocks.SCORCHEDWOOD.nameRegistry, "inventorya"));
+		ModelLoader.setCustomModelResourceLocation((Item)RegBlocks.iblock_scorchedwood, 1, new ModelResourceLocation(Noria_Blocks.SCORCHEDWOOD.nameRegistry, "inventoryb"));
+		renderItem.getItemModelMesher().register((Item)RegBlocks.iblock_scorchedwood, 1, new ModelResourceLocation(Noria_Blocks.SCORCHEDWOOD.nameRegistry, "inventoryb"));
+		ModelLoader.setCustomModelResourceLocation((Item)RegBlocks.iblock_scorchedwood, 2, new ModelResourceLocation(Noria_Blocks.SCORCHEDWOOD.nameRegistry, "inventoryc"));
+		renderItem.getItemModelMesher().register((Item)RegBlocks.iblock_scorchedwood, 2, new ModelResourceLocation(Noria_Blocks.SCORCHEDWOOD.nameRegistry, "inventoryc"));
+		ModelLoader.setCustomModelResourceLocation((Item)RegBlocks.iblock_scorchedwood, 3, new ModelResourceLocation(Noria_Blocks.SCORCHEDWOOD.nameRegistry, "inventoryd"));
+		renderItem.getItemModelMesher().register((Item)RegBlocks.iblock_scorchedwood, 3, new ModelResourceLocation(Noria_Blocks.SCORCHEDWOOD.nameRegistry, "inventoryd"));
+		ModelLoader.setCustomModelResourceLocation((Item)RegBlocks.iblock_scorchedwood, 4, new ModelResourceLocation(Noria_Blocks.SCORCHEDWOOD.nameRegistry, "inventorye"));
+		renderItem.getItemModelMesher().register((Item)RegBlocks.iblock_scorchedwood, 4, new ModelResourceLocation(Noria_Blocks.SCORCHEDWOOD.nameRegistry, "inventorye"));
+		ModelLoader.setCustomModelResourceLocation((Item)RegBlocks.iblock_scorchedwood, 5, new ModelResourceLocation(Noria_Blocks.SCORCHEDWOOD.nameRegistry, "inventoryf"));
+		renderItem.getItemModelMesher().register((Item)RegBlocks.iblock_scorchedwood, 5, new ModelResourceLocation(Noria_Blocks.SCORCHEDWOOD.nameRegistry, "inventoryf"));
+		ModelLoader.setCustomModelResourceLocation((Item)RegBlocks.iblock_scorchedwood, 6, new ModelResourceLocation(Noria_Blocks.SCORCHEDWOOD.nameRegistry, "inventoryg"));
+		renderItem.getItemModelMesher().register((Item)RegBlocks.iblock_scorchedwood, 6, new ModelResourceLocation(Noria_Blocks.SCORCHEDWOOD.nameRegistry, "inventoryg"));
+		ModelLoader.setCustomModelResourceLocation((Item)RegBlocks.iblock_scorchedwood, 7, new ModelResourceLocation(Noria_Blocks.SCORCHEDWOOD.nameRegistry, "inventoryh"));
+		renderItem.getItemModelMesher().register((Item)RegBlocks.iblock_scorchedwood, 7, new ModelResourceLocation(Noria_Blocks.SCORCHEDWOOD.nameRegistry, "inventoryh"));
+		ModelLoader.setCustomModelResourceLocation((Item)RegBlocks.iblock_scorchedwood, 8, new ModelResourceLocation(Noria_Blocks.SCORCHEDWOOD.nameRegistry, "inventoryi"));
+		renderItem.getItemModelMesher().register((Item)RegBlocks.iblock_scorchedwood, 8, new ModelResourceLocation(Noria_Blocks.SCORCHEDWOOD.nameRegistry, "inventoryi"));
+		ModelLoader.setCustomModelResourceLocation((Item)RegBlocks.iblock_scorchedwood, 9, new ModelResourceLocation(Noria_Blocks.SCORCHEDWOOD.nameRegistry, "inventoryj"));
+		renderItem.getItemModelMesher().register((Item)RegBlocks.iblock_scorchedwood, 9, new ModelResourceLocation(Noria_Blocks.SCORCHEDWOOD.nameRegistry, "inventoryj"));
+		ModelLoader.setCustomModelResourceLocation((Item)RegBlocks.iblock_scorchedwood, 10, new ModelResourceLocation(Noria_Blocks.SCORCHEDWOOD.nameRegistry, "inventoryk"));
+		renderItem.getItemModelMesher().register((Item)RegBlocks.iblock_scorchedwood, 10, new ModelResourceLocation(Noria_Blocks.SCORCHEDWOOD.nameRegistry, "inventoryk"));
+		ModelLoader.setCustomModelResourceLocation((Item)RegBlocks.iblock_scorchedwood, 11, new ModelResourceLocation(Noria_Blocks.SCORCHEDWOOD.nameRegistry, "inventoryl"));
+		renderItem.getItemModelMesher().register((Item)RegBlocks.iblock_scorchedwood, 11, new ModelResourceLocation(Noria_Blocks.SCORCHEDWOOD.nameRegistry, "inventoryl"));
+		
+		ModelLoader.setCustomModelResourceLocation((Item)RegBlocks.iblock_treetap, 0, new ModelResourceLocation(Noria_Blocks.TREETAP.nameRegistry, "inventory"));
+		renderItem.getItemModelMesher().register((Item)RegBlocks.iblock_treetap, 0, new ModelResourceLocation(Noria_Blocks.TREETAP.nameRegistry, "inventory"));
 	}
 	
 	private void initRenderTileEntities()

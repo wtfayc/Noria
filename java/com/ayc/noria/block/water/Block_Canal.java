@@ -1,4 +1,4 @@
-package com.ayc.noria.block.waterstuff;
+package com.ayc.noria.block.water;
 
 import java.util.Iterator;
 import java.util.List;

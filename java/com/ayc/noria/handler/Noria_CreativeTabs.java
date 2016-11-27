@@ -17,4 +17,14 @@ public class Noria_CreativeTabs {
 			return Items.ENDER_EYE;
 		}
 	};
+	
+	public static CreativeTabs NORIA_TECH_TAB = new CreativeTabs(13, "NORIA TECH")
+	{
+		@Override
+		@SideOnly(Side.CLIENT)
+		public Item getTabIconItem()
+		{
+			return Items.ENDER_EYE;
+		}
+	};
 }

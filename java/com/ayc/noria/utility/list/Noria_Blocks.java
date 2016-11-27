@@ -10,6 +10,9 @@ import net.minecraft.creativetab.CreativeTabs;
 public enum Noria_Blocks {
 
 	CANAL (Material.ROCK, "canal", "canal", 2.0F, 10.0F, Noria_CreativeTabs.NORIA_BASE_TAB, SoundType.STONE), //TODO Values
+	SCORCHEDWOOD (Material.ROCK, "scorchedwood", "scorchedwood", 2.0F, 10.0F, Noria_CreativeTabs.NORIA_TECH_TAB, SoundType.STONE), //TODO Values
+	CERAMICJAR (Material.ROCK, "ceramicjar", "ceramicjar", 2.0F, 10.0F, Noria_CreativeTabs.NORIA_BASE_TAB, SoundType.STONE), //TODO Values
+	TREETAP (Material.ROCK, "treetap", "treetap", 2.0F, 10.0F, Noria_CreativeTabs.NORIA_BASE_TAB, SoundType.STONE), //TODO Values
 	TEST (Material.WOOD, "test", "test", 2.0F, 10.0F, Noria_CreativeTabs.NORIA_BASE_TAB, SoundType.WOOD),
 	TEST2 (Material.WOOD, "test2", "test2", 2.0F, 10.0F, Noria_CreativeTabs.NORIA_BASE_TAB, SoundType.WOOD),
 	
