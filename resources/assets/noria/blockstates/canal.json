@@ -4,87 +4,36 @@
 "variants": 
 {
 "normal": [{}],
-"inventorya": 
-[{
-"model": "noria:canal_inventory", 
-"textures": {"0": "blocks/stonebrick"}
-}],
-"inventoryb": 
-[{
-"model": "noria:canal_inventory", 
-"textures": {"0": "blocks/stonebrick_mossy"}
-}],
-"inventoryc": 
-[{
-"model": "noria:canal_inventory", 
-"textures": {"0": "blocks/sandstone_smooth"}
-}],
-"inventoryd": 
-[{
-"model": "noria:canal_inventory", 
-"textures": {"0": "blocks/sandstone_carved"}
-}],
-"inventorye": 
-[{
-"model": "noria:canal_inventory", 
-"textures": {"0": "blocks/red_sandstone_smooth"}
-}],
-"inventoryf": 
-[{
-"model": "noria:canal_inventory", 
-"textures": {"0": "blocks/red_sandstone_carved"}
-}],
-"inventoryg": 
-[{
-"model": "noria:canal_inventory", 
-"textures": {"0": "blocks/brick"}
-}],
-"inventoryh": 
-[{
-"model": "noria:canal_inventory", 
-"textures": {"0": "blocks/nether_brick"}
-}],
+"inventorya": [{ "model": "noria:canal_inventory", "textures": {"0": "blocks/stonebrick"}}],
+"inventoryb": [{ "model": "noria:canal_inventory", "textures": {"0": "blocks/stonebrick_mossy"}}],
+"inventoryc": [{ "model": "noria:canal_inventory", "textures": {"0": "blocks/sandstone_smooth"}}],
+"inventoryd": [{ "model": "noria:canal_inventory", "textures": {"0": "blocks/sandstone_carved"}}],
+"inventorye": [{ "model": "noria:canal_inventory", "textures": {"0": "blocks/red_sandstone_smooth"}}],
+"inventoryf": [{ "model": "noria:canal_inventory", "textures": {"0": "blocks/red_sandstone_carved"}}],
+"inventoryg": [{ "model": "noria:canal_inventory", "textures": {"0": "blocks/brick"}}],
+"inventoryh": [{ "model": "noria:canal_inventory", "textures": {"0": "blocks/nether_brick"}}],
+
 "north": 
 {
 "true": {},
-"false": 
-{
-"submodel": 
-{
-"side0": { "model": "noria:canal_stop" }
-}
-}
+"false": { "submodel": { "side0": { "model": "noria:canal_stop"}}}
 },
 "south": 
 {
 "true": {},
-"false": {
-"submodel": 
-{
-"side1": { "model": "noria:canal_stop", "y": 180 }
-}
-}
+"false": { "submodel": { "side1": { "model": "noria:canal_stop", "y": 180 }}}
 },
 "west": 
 {
 "true": {},
-"false": {
-"submodel": 
-{
-"side2": { "model": "noria:canal_stop", "y": 270 }
-}
-}
+"false": { "submodel": { "side2": { "model": "noria:canal_stop", "y": 270 }}}
 },
 "east": 
 {
 "true": {},
-"false": {
-"submodel": 
-{
-"side3": { "model": "noria:canal_stop", "y": 90 }
-}
-}
+"false": { "submodel": { "side3": { "model": "noria:canal_stop", "y": 90 }}}
 },
+
 "meta": 
 {
 0: { "textures": {"0": "blocks/stonebrick", "particle": "blocks/stonebrick"}},
@@ -95,6 +44,12 @@
 5: { "textures": {"0": "blocks/red_sandstone_carved", "particle": "blocks/red_sandstone_carved"}},
 6: { "textures": {"0": "blocks/brick", "particle": "blocks/brick"}},
 7: { "textures": {"0": "blocks/nether_brick", "particle": "blocks/nether_brick"}}
+},
+
+"waterlevel":
+{
+0: {},
+1: { "submodel": {"water0": { "model": "noria:canal_water0", "textures": {"0": "blocks/water_still"}}}}
 }
 
 }

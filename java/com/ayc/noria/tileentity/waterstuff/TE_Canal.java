@@ -1,11 +1,14 @@
 package com.ayc.noria.tileentity.waterstuff;
 
+import net.minecraft.block.state.IBlockState;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.EnumFacing;
 import net.minecraft.util.ITickable;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.world.World;
 
 import com.ayc.noria.API.ITransferWater;
+import com.ayc.noria.block.waterstuff.Block_Canal;
 import com.ayc.noria.tileentity.Noria_TileEntity;
 import com.ayc.noria.utility.Helper_Log;
 import com.ayc.noria.utility.Reference_Dynamic;
@@ -48,7 +51,7 @@ public class TE_Canal extends Noria_TileEntity implements ITickable, ITransferWa
 			
 		setCanTransferWater(dir.getOpposite(), false);
 		setWork(true);
-		
+
 		//DEBUG
 		Helper_Log.info(pos + " + " + this.velocity + " + " + tick);
 		
@@ -143,10 +146,11 @@ public class TE_Canal extends Noria_TileEntity implements ITickable, ITransferWa
 	}
 
 	@Override
-	public void setVelocity(int velocity) 
+	public void setVelocity(int velocity)  //TODO less blockstate update
 	{
 		this.velocity = velocity;
-		Helper_Log.info(pos + "+ " + this.velocity);
+		if (worldObj.getBlockState(pos).getBlock() instanceof Block_Canal) worldObj.setBlockState(pos, worldObj.getBlockState(pos).withProperty(Block_Canal.WATERLEVEL, velocity == 0 ? 0 : 1), 2);
+		Helper_Log.info(pos + " + " + this.velocity);
 	}
 	
 	private boolean getWork ()
@@ -165,5 +169,10 @@ public class TE_Canal extends Noria_TileEntity implements ITickable, ITransferWa
 		Helper_Log.info("SPILLING OUT");
 	}
 	
-
+	@Override
+	public boolean shouldRefresh(World world, BlockPos pos, IBlockState oldState, IBlockState newState) 
+	{
+		return (oldState.getBlock() != newState.getBlock());
+	}
+	
 }

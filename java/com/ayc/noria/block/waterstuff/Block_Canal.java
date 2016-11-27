@@ -38,13 +38,15 @@ public class Block_Canal extends Noria_Block implements ITileEntityProvider{
     public static final PropertyBool SOUTH = PropertyBool.create("south");
     public static final PropertyBool WEST = PropertyBool.create("west");
 	public static final PropertyInteger META = PropertyInteger.create("meta", 0, 7);
+	public static final PropertyInteger WATERLEVEL = PropertyInteger.create("waterlevel", 0, 1);
     
 	public Block_Canal() 
 	{
 		super(Noria_Blocks.CANAL);
 	}
 	
-	//---Blockstate---	
+	//---Blockstate---
+	@Override
 	public IBlockState getActualState(IBlockState state, IBlockAccess worldIn, BlockPos pos)
     {
         return state
@@ -61,16 +63,19 @@ public class Block_Canal extends Noria_Block implements ITileEntityProvider{
         return (block instanceof Block_Canal);
 	}
 	
+	@Override
     protected BlockStateContainer createBlockState()
     {
-        return new BlockStateContainer(this, new IProperty[] {NORTH, EAST, WEST, SOUTH, META});
+        return new BlockStateContainer(this, new IProperty[] {NORTH, EAST, WEST, SOUTH, META, WATERLEVEL});
     }
     
+	@Override
     public int getMetaFromState(IBlockState state)
     {
         return state.getValue(META);
     }
     
+	@Override
     public IBlockState getStateFromMeta(int meta)
     {
         return this.getDefaultState().withProperty(META, meta);
@@ -90,16 +95,19 @@ public class Block_Canal extends Noria_Block implements ITileEntityProvider{
     }
     
     //---Render---
+    @Override
     public boolean isOpaqueCube(IBlockState state)
     {
         return false;
     }
 
+    @Override
     public boolean isFullCube(IBlockState state)
     {
         return false;
     }
 
+    @Override
     public boolean isPassable(IBlockAccess worldIn, BlockPos pos)
     {
         return false;
