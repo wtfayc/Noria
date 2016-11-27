@@ -1,10 +1,18 @@
 {
-  "forge_marker": 1,
-  "defaults": {
-    "model": "noria:treetap"
-  },
-  "variants": {
-    "normal": [{}],
-    "inventory": [{}]
-  }
+"forge_marker": 1,
+"defaults": { "model": "noria:treetap"},
+"variants": 
+{
+"normal": [{}],
+"inventory": [{}],
+
+"orientation":
+{
+0: {"model": "noria:treetap"},
+1: {"model": "noria:treetap", "y": 90},
+2: {"model": "noria:treetap", "y": 180},
+3: {"model": "noria:treetap", "y": 270}
+}
+
+}
 }
