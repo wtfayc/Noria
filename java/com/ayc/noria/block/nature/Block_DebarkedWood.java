@@ -17,13 +17,13 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 import com.ayc.noria.block.Noria_Block;
 import com.ayc.noria.utility.list.Noria_Blocks;
 
-public class Block_ScorchedWood extends Noria_Block{
+public class Block_DebarkedWood extends Noria_Block{
 
 	public static final PropertyInteger META = PropertyInteger.create("meta", 0, 11);	
 	
-	public Block_ScorchedWood() 
+	public Block_DebarkedWood() 
 	{
-		super(Noria_Blocks.SCORCHEDWOOD);
+		super(Noria_Blocks.DEBARKEDWOOD);
 	}
 	
 	@Override

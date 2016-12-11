@@ -30,9 +30,9 @@ public class Block_Treetap extends Noria_Block{
 	
 	public int canConnectTo (IBlockAccess worldIn, BlockPos pos)
 	{
-        if (worldIn.getBlockState(pos.east()).getBlock() instanceof Block_ScorchedWood && worldIn.getBlockState(pos.east()).getBlock().getMetaFromState(worldIn.getBlockState(pos.east())) % 4 == 1) return 1;
-        if (worldIn.getBlockState(pos.south()).getBlock() instanceof Block_ScorchedWood && worldIn.getBlockState(pos.south()).getBlock().getMetaFromState(worldIn.getBlockState(pos.south())) % 4 == 2) return 2;
-        if (worldIn.getBlockState(pos.west()).getBlock() instanceof Block_ScorchedWood && worldIn.getBlockState(pos.west()).getBlock().getMetaFromState(worldIn.getBlockState(pos.west())) % 4 == 3) return 3;
+        if (worldIn.getBlockState(pos.east()).getBlock() instanceof Block_DebarkedWood && worldIn.getBlockState(pos.east()).getBlock().getMetaFromState(worldIn.getBlockState(pos.east())) % 4 == 1) return 1;
+        if (worldIn.getBlockState(pos.south()).getBlock() instanceof Block_DebarkedWood && worldIn.getBlockState(pos.south()).getBlock().getMetaFromState(worldIn.getBlockState(pos.south())) % 4 == 2) return 2;
+        if (worldIn.getBlockState(pos.west()).getBlock() instanceof Block_DebarkedWood && worldIn.getBlockState(pos.west()).getBlock().getMetaFromState(worldIn.getBlockState(pos.west())) % 4 == 3) return 3;
         return 0;
 	}
 	

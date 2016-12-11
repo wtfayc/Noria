@@ -1,0 +1,17 @@
+{
+"forge_marker": 1,
+"defaults": { "model": "noria:void"},
+"variants": 
+{
+"normal": [{}],
+"inventorya": [{ "model": "noria:millstone"}],
+"inventoryb": [{ "model": "noria:millstone_red"}],
+
+"meta": 
+{
+0: {"model": "noria:void"},
+1: {"model": "noria:void"}
+}
+
+}
+}

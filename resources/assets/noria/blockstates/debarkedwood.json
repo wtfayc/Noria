@@ -1,0 +1,41 @@
+{
+"forge_marker": 1,
+"defaults": { "model": "noria:debarkedwood"},
+"variants": 
+{
+"normal": [{}],
+"inventorya": [{"model": "noria:debarkedwood", "textures": {"0": "blocks/log_spruce", "1": "blocks/planks_spruce", "2": "blocks/log_spruce_top"}}],
+"inventoryb": [{"model": "noria:debarkedwood", "y": 90, "textures": {"0": "blocks/log_spruce", "1": "blocks/planks_spruce", "2": "blocks/log_spruce_top"}}],
+"inventoryc": [{"model": "noria:debarkedwood", "y": 180, "textures": {"0": "blocks/log_spruce", "1": "blocks/planks_spruce", "2": "blocks/log_spruce_top"}}],
+"inventoryd": [{"model": "noria:debarkedwood", "y": 270, "textures": {"0": "blocks/log_spruce", "1": "blocks/planks_spruce", "2": "blocks/log_spruce_top"}}],
+
+"inventorye": [{"model": "noria:debarkedwood", "textures": {"0": "blocks/log_birch", "1": "blocks/planks_birch", "2": "blocks/log_birch_top"}}],
+"inventoryf": [{"model": "noria:debarkedwood", "y": 90, "textures": {"0": "blocks/log_birch", "1": "blocks/planks_birch", "2": "blocks/log_birch_top"}}],
+"inventoryg": [{"model": "noria:debarkedwood", "y": 180, "textures": {"0": "blocks/log_birch", "1": "blocks/planks_birch", "2": "blocks/log_birch_top"}}],
+"inventoryh": [{"model": "noria:debarkedwood", "y": 270, "textures": {"0": "blocks/log_birch", "1": "blocks/planks_birch", "2": "blocks/log_birch_top"}}],
+
+"inventoryi": [{"model": "noria:debarkedwood", "textures": {"0": "blocks/log_acacia", "1": "blocks/planks_acacia", "2": "blocks/log_acacia_top"}}],
+"inventoryj": [{"model": "noria:debarkedwood", "y": 90, "textures": {"0": "blocks/log_acacia", "1": "blocks/planks_acacia", "2": "blocks/log_acacia_top"}}],
+"inventoryk": [{"model": "noria:debarkedwood", "y": 180, "textures": {"0": "blocks/log_acacia", "1": "blocks/planks_acacia", "2": "blocks/log_acacia_top"}}],
+"inventoryl": [{"model": "noria:debarkedwood", "y": 270, "textures": {"0": "blocks/log_acacia", "1": "blocks/planks_acacia", "2": "blocks/log_acacia_top"}}],
+
+"meta": 
+{
+0: {"model": "noria:debarkedwood", "textures": {"particle": "blocks/log_spruce", "0": "blocks/log_spruce", "1": "blocks/planks_spruce", "2": "blocks/log_spruce_top"}},
+1: {"model": "noria:debarkedwood", "y": 90, "textures": {"particle": "blocks/log_spruce", "0": "blocks/log_spruce", "1": "blocks/planks_spruce", "2": "blocks/log_spruce_top"}},
+2: {"model": "noria:debarkedwood", "y": 180, "textures": {"particle": "blocks/log_spruce", "0": "blocks/log_spruce", "1": "blocks/planks_spruce", "2": "blocks/log_spruce_top"}},
+3: {"model": "noria:debarkedwood", "y": 270, "textures": {"particle": "blocks/log_spruce", "0": "blocks/log_spruce", "1": "blocks/planks_spruce", "2": "blocks/log_spruce_top"}},
+
+4: {"model": "noria:debarkedwood", "textures": {"particle": "blocks/log_birch", "0": "blocks/log_birch", "1": "blocks/planks_birch", "2": "blocks/log_birch_top"}},
+5: {"model": "noria:debarkedwood", "y": 90, "textures": {"particle": "blocks/log_birch", "0": "blocks/log_birch", "1": "blocks/planks_birch", "2": "blocks/log_birch_top"}},
+6: {"model": "noria:debarkedwood", "y": 180, "textures": {"particle": "blocks/log_birch", "0": "blocks/log_birch", "1": "blocks/planks_birch", "2": "blocks/log_birch_top"}},
+7: {"model": "noria:debarkedwood", "y": 270, "textures": {"particle": "blocks/log_birch", "0": "blocks/log_birch", "1": "blocks/planks_birch", "2": "blocks/log_birch_top"}},
+
+8: {"model": "noria:debarkedwood", "textures": {"particle": "blocks/log_acacia", "0": "blocks/log_acacia", "1": "blocks/planks_acacia", "2": "blocks/log_acacia_top"}},
+9: {"model": "noria:debarkedwood", "y": 90, "textures": {"particle": "blocks/log_acacia", "0": "blocks/log_acacia", "1": "blocks/planks_acacia", "2": "blocks/log_acacia_top"}},
+10: {"model": "noria:debarkedwood", "y": 180, "textures": {"particle": "blocks/log_acacia", "0": "blocks/log_acacia", "1": "blocks/planks_acacia", "2": "blocks/log_acacia_top"}},
+11: {"model": "noria:debarkedwood", "y": 270, "textures": {"particle": "blocks/log_acacia", "0": "blocks/log_acacia", "1": "blocks/planks_acacia", "2": "blocks/log_acacia_top"}}
+}
+
+}
+}

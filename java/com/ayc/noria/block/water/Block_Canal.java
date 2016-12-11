@@ -28,7 +28,7 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 
 import com.ayc.noria.API.ITransferWater;
 import com.ayc.noria.block.Noria_Block;
-import com.ayc.noria.tileentity.waterstuff.TE_Canal;
+import com.ayc.noria.tileentity.water.TE_Canal;
 import com.ayc.noria.utility.list.Noria_Blocks;
 
 public class Block_Canal extends Noria_Block implements ITileEntityProvider{

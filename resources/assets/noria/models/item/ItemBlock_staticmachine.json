@@ -1,5 +1,5 @@
 {
-    "parent":"noria:block/test",
+    "parent":"noria:block/millstone_bot",
     "display": {
         "thirdperson": {
             "rotation": [ 10, -45, 170 ],

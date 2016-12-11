@@ -49,7 +49,7 @@
 "waterlevel":
 {
 0: {},
-1: { "submodel": {"water0": { "model": "noria:canal_water0", "textures": {"0": "blocks/water_still"}}}}
+1: { "submodel": { "water0": { "model": "noria:canal_water0", "textures": {"0": "blocks/water_still"}}}}
 }
 
 }

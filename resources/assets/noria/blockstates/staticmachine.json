@@ -1,0 +1,17 @@
+{
+"forge_marker": 1,
+"defaults": { "model": "noria:millstone_bot"},
+"variants": 
+{
+"normal": [{}],
+"inventorya": [{ "model": "noria:millstone_bot", "transform": {"scale": 0.67}, "textures": {"0": "blocks/sandstone_top", "1": "blocks/sandstone_carved", "2": "blocks/sandstone_smooth"}}],
+"inventoryb": [{ "model": "noria:millstone_bot", "transform": {"scale": 0.67}, "textures": {"0": "blocks/red_sandstone_top", "1": "blocks/red_sandstone_carved", "2": "blocks/red_sandstone_smooth"}}],
+
+"meta": 
+{
+0: {"model": "noria:millstone_bot", "textures": {"0": "blocks/sandstone_top", "1": "blocks/sandstone_carved", "2": "blocks/sandstone_smooth"}},
+1: {"model": "noria:millstone_bot", "textures": {"0": "blocks/red_sandstone_top", "1": "blocks/red_sandstone_carved", "2": "blocks/red_sandstone_smooth"}}
+}
+
+}
+}

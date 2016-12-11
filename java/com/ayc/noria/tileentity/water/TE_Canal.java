@@ -1,4 +1,4 @@
-package com.ayc.noria.tileentity.waterstuff;
+package com.ayc.noria.tileentity.water;
 
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.tileentity.TileEntity;
@@ -31,7 +31,7 @@ public class TE_Canal extends Noria_TileEntity implements ITickable, ITransferWa
 	public void update() 
 	{
 		if (getWork()) tick++;
-		if (tick >= 20 && (tick % (20 + (pos.getX()*pos.getZ()) % 10)) == 0)
+		if (tick > 0 && (tick % (20 + (pos.getX()*pos.getZ()) % 10)) == 0)
 		{
 			if (velocity == 0) setWork(false);
 			transferVelocity();
@@ -60,7 +60,6 @@ public class TE_Canal extends Noria_TileEntity implements ITickable, ITransferWa
 	@Override
 	public void transferVelocity()
 	{
-		Helper_Log.info(pos + " yo");
 		int count = 0;
 		for (EnumFacing facing : EnumFacing.values())
 		{
@@ -150,7 +149,6 @@ public class TE_Canal extends Noria_TileEntity implements ITickable, ITransferWa
 	{
 		this.velocity = velocity;
 		if (worldObj.getBlockState(pos).getBlock() instanceof Block_Canal) worldObj.setBlockState(pos, worldObj.getBlockState(pos).withProperty(Block_Canal.WATERLEVEL, velocity == 0 ? 0 : 1), 2);
-		Helper_Log.info(pos + " + " + this.velocity);
 	}
 	
 	private boolean getWork ()

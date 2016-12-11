@@ -1,7 +1,5 @@
 package com.ayc.noria.handler.render;
 
-import org.lwjgl.opengl.GL11;
-
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.GlStateManager;
 import net.minecraft.client.renderer.RenderHelper;
@@ -10,18 +8,18 @@ import net.minecraft.client.renderer.block.model.IBakedModel;
 import net.minecraft.client.renderer.texture.TextureMap;
 import net.minecraft.client.renderer.tileentity.TileEntitySpecialRenderer;
 import net.minecraft.client.renderer.vertex.DefaultVertexFormats;
-import net.minecraft.item.ItemStack;
-import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.world.World;
 import net.minecraftforge.client.model.IModel;
 import net.minecraftforge.client.model.ModelLoaderRegistry;
 import net.minecraftforge.common.model.TRSRTransformation;
 
-import com.ayc.noria.tileentity.water.TE_Noria;
+import org.lwjgl.opengl.GL11;
+
+import com.ayc.noria.tileentity.water.TE_Undershot;
 import com.ayc.noria.utility.Reference_Static;
 
-public class TESR_Noria extends TileEntitySpecialRenderer<TE_Noria>{
+public class TESR_Undershot extends TileEntitySpecialRenderer<TE_Undershot>{
 	
     private IModel model;
     private IBakedModel bakedModel;
@@ -30,7 +28,7 @@ public class TESR_Noria extends TileEntitySpecialRenderer<TE_Noria>{
     {
         if (bakedModel == null) {
             try {
-                model = ModelLoaderRegistry.getModel(new ResourceLocation(Reference_Static.MOD_ID, "block/multiblock/noria.obj"));
+                model = ModelLoaderRegistry.getModel(new ResourceLocation(Reference_Static.MOD_ID, "block/multiblock/undershot.obj"));
             } catch (Exception e) {
                 throw new RuntimeException(e);
             }
@@ -41,7 +39,7 @@ public class TESR_Noria extends TileEntitySpecialRenderer<TE_Noria>{
     }
 
     @Override
-    public void renderTileEntityAt(TE_Noria te, double x, double y, double z, float partialTicks, int destroyStage) {
+    public void renderTileEntityAt(TE_Undershot te, double x, double y, double z, float partialTicks, int destroyStage) {
         GlStateManager.pushAttrib();
         GlStateManager.pushMatrix();
         GlStateManager.translate(x, y, z);

@@ -7,21 +7,43 @@ X   Fix Noria flickering support objects
     
     NEXT
     Turpentine from pine trees
+    Treetap
+    Recipients : wooden bucket > ceramic jar > metal thingie
+    Alembic
     Pine wood tar from tar kiln
-    Water Canal
-    Water Gutter
+X   Water Canal
+    Large Water Canal
     Water Reservoir
     Overshot Waterwheel
+    Undershot Waterwheel
+    Hybrid Waterwheel
+    Velometer
     
     LONG RUN
+    Copper Still (steam tier)
     Water effects
     Tympanon
     Steam
     Modular Armor
     Brick kiln
     Metallurgy that makes sense
+    Creeping angels : creepers that can't move when you look at them
+    Lava lamps from wax
+    Sludge
+    wind power
     
     COMPAT
     Forestry Wax
     Railcraft Creosote
     Immersive Eng Creosote
+    Railcraft Steam
+    IC2 Rubber trees
+    Forestry trees
+    Crossroads compat ?
+    
+    TEXTURE FIXES
+    DebarkedWood logs
+    Water in canals
+    Canals top
+    Water in canals Z conflict
+    Fix particles for millstone related blocks

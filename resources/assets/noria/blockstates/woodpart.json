@@ -1,0 +1,40 @@
+{
+"forge_marker": 1,
+"defaults": { "model": "noria:void"},
+"variants": 
+{
+"normal": [{}],
+"inventorya": [{ "model": "noria:woodpart", "textures": {"0": "blocks/planks_oak"}}],
+"inventoryb": [{ "model": "noria:woodpart", "textures": {"0": "blocks/planks_spruce"}}],
+"inventoryc": [{ "model": "noria:woodpart", "textures": {"0": "blocks/planks_birch"}}],
+"inventoryd": [{ "model": "noria:woodpart", "textures": {"0": "blocks/planks_jungle"}}],
+"inventorye": [{ "model": "noria:woodpart", "textures": {"0": "blocks/planks_acacia"}}],
+"inventoryf": [{ "model": "noria:woodpart", "textures": {"0": "blocks/planks_big_oak"}}],
+"inventoryg": [{ "model": "noria:woodpart", "textures": {"0": "noria:blocks/planks_treated"}}],
+
+"meta": 
+{
+0: {"textures": {"0": "blocks/planks_oak"}},
+1: {"textures": {"0": "blocks/planks_spruce"}},
+2: {"textures": {"0": "blocks/planks_birch"}},
+3: {"textures": {"0": "blocks/planks_jungle"}},
+4: {"textures": {"0": "blocks/planks_acacia"}},
+5: {"textures": {"0": "blocks/planks_big_oak"}},
+6: {"textures": {"0": "noria:blocks/planks_treated"}}
+},
+
+"state":
+{
+0: { "model": "noria:woodpart"},
+1: { "model": "noria:millstone_corner"},
+2: { "model": "noria:millstone_side"},
+3: { "model": "noria:millstone_corner", "y": 90},
+4: { "model": "noria:millstone_side", "y": 90},
+5: { "model": "noria:millstone_corner", "y": 180},
+6: { "model": "noria:millstone_side", "y": 180},
+7: { "model": "noria:millstone_corner", "y": 270},
+8: { "model": "noria:millstone_side", "y": 270}
+}
+
+}
+}
