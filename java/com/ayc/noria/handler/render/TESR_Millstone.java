@@ -17,7 +17,6 @@ import net.minecraftforge.common.model.TRSRTransformation;
 import org.lwjgl.opengl.GL11;
 
 import com.ayc.noria.tileentity.rotary.TE_Millstone;
-import com.ayc.noria.tileentity.water.TE_Noria;
 import com.ayc.noria.utility.Reference_Static;
 
 public class TESR_Millstone extends TileEntitySpecialRenderer<TE_Millstone>{
