@@ -14,13 +14,13 @@
 
 "meta": 
 {
-0: {"textures": {"0": "blocks/planks_oak"}},
-1: {"textures": {"0": "blocks/planks_spruce"}},
-2: {"textures": {"0": "blocks/planks_birch"}},
-3: {"textures": {"0": "blocks/planks_jungle"}},
-4: {"textures": {"0": "blocks/planks_acacia"}},
-5: {"textures": {"0": "blocks/planks_big_oak"}},
-6: {"textures": {"0": "noria:blocks/planks_treated"}}
+0: {"textures": {"particle": "blocks/planks_oak", "0": "blocks/planks_oak"}},
+1: {"textures": {"particle": "blocks/planks_spruce", "0": "blocks/planks_spruce"}},
+2: {"textures": {"particle": "blocks/planks_birch", "0": "blocks/planks_birch"}},
+3: {"textures": {"particle": "blocks/planks_jungle", "0": "blocks/planks_jungle"}},
+4: {"textures": {"particle": "blocks/planks_acacia", "0": "blocks/planks_acacia"}},
+5: {"textures": {"particle": "blocks/planks_big_oak", "0": "blocks/planks_big_oak"}},
+6: {"textures": {"particle": "noria:blocks/planks_treated", "0": "noria:blocks/planks_treated"}}
 },
 
 "state":

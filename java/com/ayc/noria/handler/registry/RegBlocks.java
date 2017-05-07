@@ -1,8 +1,13 @@
 package com.ayc.noria.handler.registry;
 
+import com.ayc.noria.block.heat.Block_Lancashire;
+import com.ayc.noria.block.heat.Block_StateMachine;
+import com.ayc.noria.block.heat.Block_temp;
+import com.ayc.noria.block.heat.Block_temp2;
 import com.ayc.noria.block.nature.Block_CeramicJar;
 import com.ayc.noria.block.nature.Block_DebarkedWood;
 import com.ayc.noria.block.nature.Block_Treetap;
+import com.ayc.noria.block.nature.Block_Worldgen;
 import com.ayc.noria.block.rotary.Block_RotaryMachine;
 import com.ayc.noria.block.rotary.Block_StaticMachine;
 import com.ayc.noria.block.rotary.Block_WoodPart;
@@ -36,6 +41,19 @@ public class RegBlocks {
 	public static final Block block_treetap = new Block_Treetap();
 	public static final ItemBlock iblock_treetap = new Noria_ItemBlock(block_treetap);
 	
+	public static final Block block_worldgen = new Block_Worldgen();
+	public static final ItemBlock iblock_worldgen = new Noria_ItemBlock(block_worldgen);
+	
+	public static final Block block_statemachine = new Block_StateMachine();
+	public static final ItemBlock iblock_statemachine = new Noria_ItemBlock(block_statemachine);
+	public static final Block block_lancashire = new Block_Lancashire();
+	public static final ItemBlock iblock_lancashire = new Noria_ItemBlock(block_lancashire);
+	
+	public static final Block block_temp = new Block_temp();
+	public static final ItemBlock iblock_temp = new Noria_ItemBlock(block_temp);
+	public static final Block block_temp2 = new Block_temp2();
+	public static final ItemBlock iblock_temp2 = new Noria_ItemBlock(block_temp2);
+	
 	public static void preInit()
 	{
 		GameRegistry.register(block_noria);
@@ -56,6 +74,19 @@ public class RegBlocks {
 		GameRegistry.register(iblock_debarkedwood.setRegistryName(Noria_Blocks.DEBARKEDWOOD.nameItemBlock));
 		GameRegistry.register(block_treetap);
 		GameRegistry.register(iblock_treetap.setRegistryName(Noria_Blocks.TREETAP.nameItemBlock));
+		
+		GameRegistry.register(block_worldgen);
+		GameRegistry.register(iblock_worldgen.setRegistryName(Noria_Blocks.WORLDGEN.nameItemBlock));
+		
+		GameRegistry.register(block_statemachine);
+		GameRegistry.register(iblock_statemachine.setRegistryName(Noria_Blocks.STATEMACHINE.nameItemBlock));
+		GameRegistry.register(block_lancashire);
+		GameRegistry.register(iblock_lancashire.setRegistryName(Noria_Blocks.LANCASHIRE.nameItemBlock));
+		
+		GameRegistry.register(block_temp);
+		GameRegistry.register(iblock_temp.setRegistryName(Noria_Blocks.TEMP.nameItemBlock));
+		GameRegistry.register(block_temp2);
+		GameRegistry.register(iblock_temp2.setRegistryName(Noria_Blocks.TEMP2.nameItemBlock));
 	}
 	
 }

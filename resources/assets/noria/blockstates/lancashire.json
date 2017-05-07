@@ -1,0 +1,30 @@
+{
+"forge_marker": 1,
+"defaults": { "model": "noria:void"},
+"variants": 
+{
+"normal": [{}],
+"inventorya": [{ "model": "noria:lancashire/lancashire_brick_bot"}],
+
+
+"meta": 
+{
+0: {"textures": {"particle": "blocks/planks_oak", "0": "blocks/planks_oak"}},
+1: {"y": 90}
+},
+
+"state":
+{
+0: {"model": "noria:lancashire/lancashire_brick_botleft"},
+1: {"model": "noria:lancashire/lancashire_brick_botright"},
+2: {"model": "noria:lancashire/lancashire_brick_chimney"},
+3: {"model": "noria:lancashire/lancashire_brick_left"},
+4: {"model": "noria:lancashire/lancashire_brick_right"},
+5: {"model": "noria:lancashire/lancashire_corner_botleft"},
+6: {"model": "noria:lancashire/lancashire_corner_botright"},
+7: {"model": "noria:lancashire/lancashire_maintenance"},
+8: {"model": "noria:lancashire/lancashire_corner_top"}
+}
+
+}
+}

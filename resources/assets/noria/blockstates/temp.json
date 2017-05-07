@@ -1,0 +1,45 @@
+{
+"forge_marker": 1,
+"defaults": { "model": "noria:lancashire/lancashire_maintenance"},
+"variants": 
+{
+"normal": [{}],
+"inventorya": [{ "model": "noria:lancashire/lancashire_brick_botleft"}],
+"inventoryb": [{ "model": "noria:lancashire/lancashire_brick_botright"}],
+"inventoryc": [{ "model": "noria:lancashire/lancashire_brick_chimney"}],
+"inventoryd": [{ "model": "noria:lancashire/lancashire_brick_left"}],
+"inventorye": [{ "model": "noria:lancashire/lancashire_brick_right"}],
+"inventoryf": [{ "model": "noria:lancashire/lancashire_corner_botleft"}],
+"inventoryg": [{ "model": "noria:lancashire/lancashire_corner_botright"}],
+"inventoryh": [{ "model": "noria:lancashire/lancashire_maintenance"}],
+"inventoryi": [{ "model": "noria:lancashire/lancashire_corner_top"}],
+"inventoryj": [{ "model": "noria:lancashire/lancashire_corner_top", "y": 180}],
+"inventoryk": [{ "model": "noria:block"}],
+"inventoryl": [{ "model": "noria:block", "textures": {"0": "blocks/brick"}}],
+"inventorym": [{ "model": "noria:lancashire/lancashire_brick_chimney", "textures": {"0": "noria:blocks/metal_steel"}}],
+"inventoryn": [{ "model": "noria:lancashire/lancashire_mudvalve"}],
+"inventoryo": [{ "model": "noria:lancashire/lancashire_ash"}],
+"inventoryp": [{ "model": "noria:lancashire/lancashire_central"}],
+
+"meta": 
+{
+0: {"model": "noria:lancashire/lancashire_brick_botleft"},
+1: {"model": "noria:lancashire/lancashire_brick_botright"},
+2: {"model": "noria:lancashire/lancashire_brick_chimney"},
+3: {"model": "noria:lancashire/lancashire_brick_left"},
+4: {"model": "noria:lancashire/lancashire_brick_right"},
+5: {"model": "noria:lancashire/lancashire_corner_botleft"},
+6: {"model": "noria:lancashire/lancashire_corner_botright"},
+7: {"model": "noria:lancashire/lancashire_maintenance"},
+8: {"model": "noria:lancashire/lancashire_corner_top"},
+9: {"model": "noria:lancashire/lancashire_corner_top", "y": 180},
+10: {"model": "noria:block"},
+11: {"model": "noria:block", "textures": {"particle": "blocks/brick", "0": "blocks/brick"}},
+12: {"model": "noria:lancashire/lancashire_brick_chimney", "textures": {"particle": "noria:blocks/metal_steel", "0": "noria:blocks/metal_steel"}},
+13: {"model": "noria:lancashire/lancashire_mudvalve"},
+14: {"model": "noria:lancashire/lancashire_ash"},
+15: {"model": "noria:lancashire/lancashire_central"}
+}
+
+}
+}

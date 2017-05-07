@@ -1,0 +1,26 @@
+{
+"forge_marker": 1,
+"defaults": { "model": "noria:lancashire/lancashire_maintenance"},
+"variants": 
+{
+"normal": [{}],
+"inventorya": [{ "model": "noria:lancashire/lancashire_brick_bot"}],
+
+
+"meta": 
+{
+0: {"model": "noria:lancashire/lancashire_brick_bot"},
+1: {"model": "noria:lancashire/lancashire_waterlevel"},
+2: {"model": "noria:lancashire/lancashire_ash_valve"},
+3: {"model": "noria:lancashire/lancashire_ash"}
+},
+
+"state":
+{
+0: {"y": 0},
+1: { "submodel": {"model": "noria:lancashire/lancashire_ash_doorclosed"}},
+2: { "submodel": {"model": "noria:lancashire/lancashire_ash_dooropened"}}
+}
+
+}
+}

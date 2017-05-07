@@ -4,8 +4,8 @@
 "variants": 
 {
 "normal": [{}],
-"inventorya": [{ "model": "noria:multiblock/noria.obj", "transform": {"scale": 0.077, "rotation": [{"y": 45}]}}],
-"inventoryb": [{ "model": "noria:multiblock/undershot.obj", "transform": {"scale": 0.2, "rotation": [{"y": 45}]}}],
+"inventorya": [{ "model": "noria:obj/noria.obj", "transform": {"scale": 0.077, "rotation": [{"y": 45}]}}],
+"inventoryb": [{ "model": "noria:obj/undershot.obj", "transform": {"scale": 0.2, "rotation": [{"y": 45}]}}],
 
 "meta": 
 {

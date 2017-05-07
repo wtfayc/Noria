@@ -16,8 +16,13 @@ public enum Noria_Blocks {
 	WOODPART (Material.ROCK, "woodpart", "woodpart", 2.0F, 10.0F, Noria_CreativeTabs.NORIA_BASE_TAB, SoundType.STONE), //TODO Values
 	DEBARKEDWOOD (Material.ROCK, "debarkedwood", "debarkedwood", 2.0F, 10.0F, Noria_CreativeTabs.NORIA_TECH_TAB, SoundType.STONE), //TODO Values
 	CERAMICJAR (Material.ROCK, "ceramicjar", "ceramicjar", 2.0F, 10.0F, Noria_CreativeTabs.NORIA_BASE_TAB, SoundType.STONE), //TODO Values
-	TREETAP (Material.ROCK, "treetap", "treetap", 2.0F, 10.0F, Noria_CreativeTabs.NORIA_BASE_TAB, SoundType.STONE) //TODO Values
+	TREETAP (Material.ROCK, "treetap", "treetap", 2.0F, 10.0F, Noria_CreativeTabs.NORIA_BASE_TAB, SoundType.STONE), //TODO Values
+	WORLDGEN (Material.ROCK, "worldgen", "worldgen", 2.0F, 10.0F, Noria_CreativeTabs.NORIA_BASE_TAB, SoundType.STONE), //TODO Values
+	STATEMACHINE (Material.ROCK, "statemachine", "statemachine", 2.0F, 10.0F, Noria_CreativeTabs.NORIA_BASE_TAB, SoundType.STONE), //TODO Values
+	LANCASHIRE (Material.ROCK, "lancashire", "lancashire", 2.0F, 10.0F, Noria_CreativeTabs.NORIA_BASE_TAB, SoundType.STONE), //TODO Values
 
+	TEMP (Material.ROCK, "temp", "temp", 2.0F, 10.0F, Noria_CreativeTabs.NORIA_TEMP_TAB, SoundType.STONE), //TODO Values
+	TEMP2 (Material.ROCK, "temp2", "temp2", 2.0F, 10.0F, Noria_CreativeTabs.NORIA_TEMP_TAB, SoundType.STONE), //TODO Values
 	
 	;
 	public Material material;

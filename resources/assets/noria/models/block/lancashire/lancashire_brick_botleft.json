@@ -1,0 +1,50 @@
+{
+    "__comment": "Model generated using MrCrayfish's Model Creator (http://mrcrayfish.com/modelcreator/)",
+"ambientocclusion": false,
+"parent": "block/cube_all",
+    "textures": {
+        "particle": "blocks/brick",
+        "0": "blocks/brick"
+    },
+    "elements": [
+        {
+            "name": "brick",
+            "from": [ 0.0, 0.0, 0.0 ], 
+            "to": [ 16.0, 16.0, 8.0 ], 
+            "faces": {
+                "north": { "texture": "#0", "uv": [ 0.0, 0.0, 16.0, 16.0 ] },
+                "east": { "texture": "#0", "uv": [ 8.0, 0.0, 16.0, 16.0 ] },
+                "south": { "texture": "#0", "uv": [ 0.0, 0.0, 16.0, 16.0 ] },
+                "west": { "texture": "#0", "uv": [ 0.0, 0.0, 8.0, 16.0 ] },
+                "up": { "texture": "#0", "uv": [ 0.0, 0.0, 16.0, 8.0 ] },
+                "down": { "texture": "#0", "uv": [ 0.0, 8.0, 16.0, 16.0 ] }
+            }
+        },
+        {
+            "name": "corner1",
+            "from": [ 0.0, 0.0, 8.0 ], 
+            "to": [ 8.0, 16.0, 16.0 ], 
+            "faces": {
+                "north": { "texture": "#-1", "uv": [ 0.0, 0.0, 8.0, 16.0 ] },
+                "east": { "texture": "#0", "uv": [ 0.0, 0.0, 8.0, 16.0 ] },
+                "south": { "texture": "#0", "uv": [ 0.0, 0.0, 8.0, 16.0 ] },
+                "west": { "texture": "#0", "uv": [ 8.0, 0.0, 16.0, 16.0 ] },
+                "up": { "texture": "#0", "uv": [ 0.0, 8.0, 8.0, 16.0 ] },
+                "down": { "texture": "#0", "uv": [ 0.0, 0.0, 8.0, 8.0 ] }
+            }
+        },
+        {
+            "name": "corner2",
+            "from": [ 8.0, 0.0, 8.0 ], 
+            "to": [ 16.0, 8.0, 16.0 ], 
+            "faces": {
+                "north": { "texture": "#-1", "uv": [ 0.0, 0.0, 8.0, 8.0 ] },
+                "east": { "texture": "#0", "uv": [ 0.0, 8.0, 8.0, 16.0 ] },
+                "south": { "texture": "#0", "uv": [ 8.0, 8.0, 16.0, 16.0 ] },
+                "west": { "texture": "#-1", "uv": [ 0.0, 0.0, 8.0, 8.0 ] },
+                "up": { "texture": "#0", "uv": [ 8.0, 8.0, 16.0, 16.0 ] },
+                "down": { "texture": "#0", "uv": [ 8.0, 0.0, 16.0, 8.0 ] }
+            }
+        }
+    ]
+}
