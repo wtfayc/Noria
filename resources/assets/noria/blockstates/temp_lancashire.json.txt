@@ -1,6 +1,6 @@
 {
 "forge_marker": 1,
-"defaults": { "model": "noria:woodpart"},
+"defaults": { "model": "noria:void"},
 "variants": 
 {
 "normal": [{}],
@@ -14,9 +14,9 @@
 
 "meta": 
 {
-0: {"textures": {"0": "blocks/brick"}},
-1: {"textures": {"0": "noria:blocks/metal_steel"}},
-2: {"textures": {"0": "noria:blocks/metal_bronze"}},
+0: {"model": "noria:woodpart", "textures": {"0": "blocks/brick"}},
+1: {"model": "noria:woodpart", "textures": {"0": "noria:blocks/metal_steel"}},
+2: {"model": "noria:woodpart", "textures": {"0": "noria:blocks/metal_bronze"}},
 3: {"model": "noria:lancashire/lancashire_brick_chimney"},
 4: {"model": "noria:lancashire/lancashire_maintenance"},
 5: {"model": "noria:lancashire/lancashire_ash"},

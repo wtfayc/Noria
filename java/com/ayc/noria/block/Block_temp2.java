@@ -1,8 +1,7 @@
-package com.ayc.noria.block.heat;
+package com.ayc.noria.block;
 
 import java.util.List;
 
-import com.ayc.noria.block.Noria_Block;
 import com.ayc.noria.tileentity.heat.TE_Lancashire;
 import com.ayc.noria.utility.list.Noria_Blocks;
 
@@ -22,8 +21,8 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 
 public class Block_temp2 extends Noria_Block {
 
-	public static final PropertyInteger META = PropertyInteger.create("meta", 0, 3);
-	public static final PropertyInteger STATE = PropertyInteger.create("state", 0, 2);
+	public static final PropertyInteger META = PropertyInteger.create("meta", 0, 4);
+	public static final PropertyInteger STATE = PropertyInteger.create("state", 0, 1);
 	
 	public Block_temp2() 
 	{
@@ -70,7 +69,7 @@ public class Block_temp2 extends Noria_Block {
     @SideOnly(Side.CLIENT)
     public void getSubBlocks(Item itemIn, CreativeTabs tab, List list)
     {
-    	for (int i = 0; i < 4; i++) list.add(new ItemStack(itemIn, 1, i));
+    	for (int i = 0; i < 5; i++) list.add(new ItemStack(itemIn, 1, i));
     }
 	
     //---Render---

@@ -1,31 +1,21 @@
 package com.ayc.noria.tileentity.heat;
 
 import com.ayc.noria.tileentity.Noria_TileEntity;
+import com.ayc.noria.utility.Helper_Log;
 
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.util.ITickable;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 
-public class TE_Lancashire extends Noria_TileEntity implements ITickable {
+public class TE_Lancashire extends Noria_TileEntity{
 
-	private int tick = 0;
 	private int state = 0;
 	
-	@Override
-	public void update() 
+	public void setState (int state)
 	{
-		tick++;
-		if (tick > 0 && tick % 20 == 0) changeState();
-		if (tick >= 100) tick = 0;
-	}
-	
-	private void changeState ()
-	{
-		state++;
-		if (state > 8) state = 0;
-		markDirty();
-		return;
+		Helper_Log.info("setting state" + state);
+		this.state = state;
 	}
 	
 	public int getState ()

@@ -12,14 +12,14 @@
 0: {"model": "noria:lancashire/lancashire_brick_bot"},
 1: {"model": "noria:lancashire/lancashire_waterlevel"},
 2: {"model": "noria:lancashire/lancashire_ash_valve"},
-3: {"model": "noria:lancashire/lancashire_ash"}
+3: {"model": "noria:lancashire/lancashire_ash"},
+4: {"model": "noria:lancashire/lancashire_brick_chimney", "x": 270, "textures": {"particle": "noria:blocks/metal_steel", "0": "noria:blocks/metal_steel"}}
 },
 
 "state":
 {
 0: {"y": 0},
-1: { "submodel": {"model": "noria:lancashire/lancashire_ash_doorclosed"}},
-2: { "submodel": {"model": "noria:lancashire/lancashire_ash_dooropened"}}
+1: { "submodel": { "door_closed": {"model": "noria:lancashire/lancashire_ash_doorclosed"}}}
 }
 
 }

@@ -1,6 +1,7 @@
 package com.ayc.noria.handler.registry;
 
 import com.ayc.noria.tileentity.heat.TE_Lancashire;
+import com.ayc.noria.tileentity.heat.TE_Lancashire_Ctrl;
 import com.ayc.noria.tileentity.rotary.TE_Millstone;
 import com.ayc.noria.tileentity.rotary.TE_MillstoneBot;
 import com.ayc.noria.tileentity.rotary.TE_MillstoneRed;
@@ -23,6 +24,7 @@ public class RegTileEntities {
 		GameRegistry.registerTileEntity(TE_MillstoneBot.class, "noria_te_millstonebot");
 		
 		GameRegistry.registerTileEntity(TE_Lancashire.class, "noria_te_lacanshire");
+		GameRegistry.registerTileEntity(TE_Lancashire_Ctrl.class, "noria_te_lacanshirectrl");
 	}
 	
 	

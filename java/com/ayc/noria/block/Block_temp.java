@@ -1,8 +1,7 @@
-package com.ayc.noria.block.heat;
+package com.ayc.noria.block;
 
 import java.util.List;
 
-import com.ayc.noria.block.Noria_Block;
 import com.ayc.noria.utility.list.Noria_Blocks;
 
 import net.minecraft.block.properties.IProperty;

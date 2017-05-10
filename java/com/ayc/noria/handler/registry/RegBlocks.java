@@ -1,9 +1,9 @@
 package com.ayc.noria.handler.registry;
 
+import com.ayc.noria.block.Block_temp;
+import com.ayc.noria.block.Block_temp2;
 import com.ayc.noria.block.heat.Block_Lancashire;
 import com.ayc.noria.block.heat.Block_StateMachine;
-import com.ayc.noria.block.heat.Block_temp;
-import com.ayc.noria.block.heat.Block_temp2;
 import com.ayc.noria.block.nature.Block_CeramicJar;
 import com.ayc.noria.block.nature.Block_DebarkedWood;
 import com.ayc.noria.block.nature.Block_Treetap;

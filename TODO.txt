@@ -5,6 +5,8 @@ X   Fix Noria flickering support objects
     Adjust TESR Noria behavior
     Noria sounds
     
+    Fix Lancashire ctrl lighting when block front down is full block
+    
     NEXT
     Turpentine from pine trees
     Treetap
@@ -46,4 +48,4 @@ X   Water Canal
     Water in canals
     Canals top
     Water in canals Z conflict
-    Fix particles for millstone related blocks
+ X  Fix particles for millstone related blocks
