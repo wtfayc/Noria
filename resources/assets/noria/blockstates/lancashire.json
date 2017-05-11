@@ -1,12 +1,12 @@
 {
 "forge_marker": 1,
-"defaults": { "model": "noria:woodpart"},
+"defaults": { "model": "noria:multiblock_block"},
 "variants": 
 {
 "normal": [{}],
-"inventorya": [{ "model": "noria:block", "textures": {"0": "blocks/brick"}}],
-"inventoryb": [{ "model": "noria:block", "textures": {"0": "noria:blocks/metal_steel"}}],
-"inventoryc": [{ "model": "noria:lancashire/lancashire_brick_chimney", "textures": {"0": "noria:blocks/metal_steel"}}],
+"inventorya": [{ "model": "noria:multiblock_block", "textures": {"9": "blocks/brick"}}],
+"inventoryb": [{ "model": "noria:multiblock_block", "textures": {"9": "noria:blocks/metal_steel"}}],
+"inventoryc": [{ "model": "noria:multiblock_block", "textures": {"9": "noria:blocks/metal_bronze"}}],
 "inventoryd": [{ "model": "noria:lancashire/lancashire_brick_chimney"}],
 "inventorye": [{ "model": "noria:lancashire/lancashire_maintenance", "y": 180}],
 "inventoryf": [{ "model": "noria:lancashire/lancashire_ash", "y": 180}],
@@ -14,9 +14,9 @@
 
 "meta": 
 {
-0: {"textures": {"0": "blocks/brick"}},
-1: {"textures": {"0": "noria:blocks/metal_steel"}},
-2: {"textures": {"0": "noria:blocks/metal_bronze"}},
+0: {"textures": {"particle": "blocks/brick", "9": "blocks/brick"}},
+1: {"textures": {"particle": "noria:blocks/metal_steel", "9": "noria:blocks/metal_steel"}},
+2: {"textures": {"particle": "noria:blocks/metal_steel", "9": "noria:blocks/metal_bronze"}},
 3: {"model": "noria:lancashire/lancashire_brick_chimney"},
 4: {"model": "noria:lancashire/lancashire_maintenance"},
 5: {"model": "noria:lancashire/lancashire_ash"},
@@ -45,8 +45,8 @@
 "part":
 {
 0: {},
-1: { "submodel": { "valve_plugged_vert": {"model": "noria:lancashire/lancashire_valve"}}},
-2: { "submodel": { "valve_plugged_horz": {"model": "noria:lancashire/lancashire_valve", "x": 270}}},
+1: { "submodel": { "valve_plugged_vert": {"model": "noria:lancashire/lancashire_valve", "textures": {"0": "noria:blocks/metal_bronze"}}}},
+2: { "submodel": { "valve_plugged_horz": {"model": "noria:lancashire/lancashire_valve", "x": 270, "textures": {"0": "noria:blocks/metal_bronze"}}}},
 3: { "submodel": { "mdoor_closed": {"model": "noria:lancashire/lancashire_maintenance_doorclosed"}}},
 4: { "submodel": { "mdoor_opened": {"model": "noria:lancashire/lancashire_maintenance_dooropened"}}},
 5: { "submodel": { "door_closed": {"model": "noria:lancashire/lancashire_ash_doorclosed"}}},

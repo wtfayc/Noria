@@ -2,7 +2,7 @@ package com.ayc.noria.block;
 
 import java.util.List;
 
-import com.ayc.noria.tileentity.heat.TE_Lancashire;
+import com.ayc.noria.tileentity.heat.lancashire.TE_Lancashire;
 import com.ayc.noria.utility.list.Noria_Blocks;
 
 import net.minecraft.block.properties.IProperty;

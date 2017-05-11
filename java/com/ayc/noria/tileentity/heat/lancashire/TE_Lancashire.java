@@ -1,26 +1,35 @@
-package com.ayc.noria.tileentity.heat;
+package com.ayc.noria.tileentity.heat.lancashire;
 
 import com.ayc.noria.tileentity.Noria_TileEntity;
 import com.ayc.noria.utility.Helper_Log;
 
 import net.minecraft.block.state.IBlockState;
-import net.minecraft.util.ITickable;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 
 public class TE_Lancashire extends Noria_TileEntity{
 
-	private int state = 0;
+	protected int state = 0;
+	protected int part = 0;
 	
 	public void setState (int state)
 	{
-		Helper_Log.info("setting state" + state);
 		this.state = state;
 	}
 	
 	public int getState ()
 	{
 		return state;
+	}
+	
+	public void setPart (int part)
+	{
+		this.part = part;
+	}
+	
+	public int getPart ()
+	{
+		return part;
 	}
 	
 	@Override

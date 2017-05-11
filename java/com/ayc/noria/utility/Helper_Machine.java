@@ -1,6 +1,7 @@
 package com.ayc.noria.utility;
 
 import net.minecraft.block.Block;
+import net.minecraft.util.EnumFacing;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
 
@@ -19,6 +20,12 @@ public class Helper_Machine {
 	{
 		if (block != null) if (worldIn.getBlockState(pos).getBlock().getMetaFromState(worldIn.getBlockState(pos)) == meta && worldIn.getBlockState(pos).getBlock() == block) return true;
 		return false;
+	}
+	
+	/**Rotate xyz translation by degree*/
+	public static BlockPos rotateBlockPos (BlockPos pos, EnumFacing side)
+	{
+		return pos;
 	}
 	
 }

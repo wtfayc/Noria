@@ -5,8 +5,12 @@ import java.util.List;
 import javax.annotation.Nullable;
 
 import com.ayc.noria.block.Noria_Block;
-import com.ayc.noria.tileentity.heat.TE_Lancashire;
-import com.ayc.noria.tileentity.heat.TE_Lancashire_Ctrl;
+import com.ayc.noria.tileentity.heat.lancashire.TE_Lancashire;
+import com.ayc.noria.tileentity.heat.lancashire.TE_Lancashire_Ash;
+import com.ayc.noria.tileentity.heat.lancashire.TE_Lancashire_Chimney;
+import com.ayc.noria.tileentity.heat.lancashire.TE_Lancashire_Ctrl;
+import com.ayc.noria.tileentity.heat.lancashire.TE_Lancashire_Maintenance;
+import com.ayc.noria.tileentity.heat.lancashire.TE_Lancashire_Valve;
 import com.ayc.noria.utility.list.Noria_Blocks;
 
 import net.minecraft.block.ITileEntityProvider;
@@ -41,7 +45,7 @@ public class Block_Lancashire extends Noria_Block implements ITileEntityProvider
 	@Override
 	public IBlockState getActualState(IBlockState state, IBlockAccess worldIn, BlockPos pos)
     {
-        return state.withProperty(STATE, getState(worldIn, pos)).withProperty(PART, getPart (worldIn, pos));
+        return state.withProperty(STATE, getState(worldIn, pos)).withProperty(PART, getPart(worldIn, pos));
     }
 	
 	private int getState (IBlockAccess worldIn, BlockPos pos)
@@ -53,6 +57,8 @@ public class Block_Lancashire extends Noria_Block implements ITileEntityProvider
 	
 	private int getPart (IBlockAccess worldIn, BlockPos pos)
 	{
+		TileEntity tileEntity = worldIn.getTileEntity(pos);
+		if (tileEntity instanceof TE_Lancashire) return ((TE_Lancashire) tileEntity).getPart();
 		return 0;
 	}
 	
@@ -116,6 +122,8 @@ public class Block_Lancashire extends Noria_Block implements ITileEntityProvider
         int meta = state.getValue(META);
         TileEntity tileEntity = worldIn.getTileEntity(pos);
         if (tileEntity == null) return false;
+        if (meta == 4) if (tileEntity instanceof TE_Lancashire_Maintenance) return ((TE_Lancashire_Maintenance) tileEntity).onBlockActivated(heldItem, side);
+        if (meta == 5) if (tileEntity instanceof TE_Lancashire_Ash) return ((TE_Lancashire_Ash) tileEntity).onBlockActivated(heldItem, side);
         if (meta == 6) if (tileEntity instanceof TE_Lancashire_Ctrl) return ((TE_Lancashire_Ctrl) tileEntity).onBlockActivated(heldItem, side);
     	    	
     	return false;
@@ -127,6 +135,10 @@ public class Block_Lancashire extends Noria_Block implements ITileEntityProvider
 		switch (meta)
 		{
 			default:	return new TE_Lancashire();
+			case 2:		return new TE_Lancashire_Valve();
+			case 3:		return new TE_Lancashire_Chimney();
+			case 4:		return new TE_Lancashire_Maintenance();
+			case 5:		return new TE_Lancashire_Ash();
 			case 6:		return new TE_Lancashire_Ctrl();
 		}
 	}
