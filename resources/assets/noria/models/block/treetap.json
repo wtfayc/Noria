@@ -2,8 +2,8 @@
     "__comment": "Model generated using MrCrayfish's Model Creator (http://mrcrayfish.com/modelcreator/)",
    "parent": "block/cube_all", 
    "textures": {
-        "particle": "blocks/planks_oak",
-        "0": "blocks/planks_oak"
+        "particle": "noria:blocks/planks_treated",
+        "0": "noria:blocks/planks_treated"
     },
     "elements": [
         {

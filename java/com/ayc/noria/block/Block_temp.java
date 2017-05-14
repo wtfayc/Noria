@@ -49,9 +49,10 @@ public class Block_temp extends Noria_Block {
 	      return state.getValue(META);
 	    }
 	    
-	    @Override
+	    @SuppressWarnings("unchecked")
+		@Override
 	    @SideOnly(Side.CLIENT)
-	    public void getSubBlocks(Item itemIn, CreativeTabs tab, List list)
+	    public void getSubBlocks(Item itemIn, CreativeTabs tab, @SuppressWarnings("rawtypes") List list)
 	    {
 	    	for (int i = 0; i < 16; i++) list.add(new ItemStack(itemIn, 1, i));
 	    }

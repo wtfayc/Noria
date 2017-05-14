@@ -1,13 +1,12 @@
 package com.ayc.noria.handler.registry;
 
 import com.ayc.noria.block.Block_temp;
-import com.ayc.noria.block.Block_temp2;
 import com.ayc.noria.block.heat.Block_Chimney;
 import com.ayc.noria.block.heat.Block_Firebox;
 import com.ayc.noria.block.heat.Block_Lancashire;
 import com.ayc.noria.block.heat.Block_StateMachine;
 import com.ayc.noria.block.heat.Block_Steampipes;
-import com.ayc.noria.block.nature.Block_CeramicJar;
+import com.ayc.noria.block.nature.Block_FluidContainer;
 import com.ayc.noria.block.nature.Block_DebarkedWood;
 import com.ayc.noria.block.nature.Block_Treetap;
 import com.ayc.noria.block.nature.Block_Worldgen;
@@ -37,8 +36,8 @@ public class RegBlocks {
 	public static final Block block_woodpart = new Block_WoodPart();
 	public static final ItemBlock iblock_woodpart = new Noria_ItemBlock(block_woodpart);
 	
-	public static final Block block_ceramicjar = new Block_CeramicJar();
-	public static final ItemBlock iblock_ceramicjar = new Noria_ItemBlock(block_ceramicjar);
+	public static final Block block_fluidcontainer = new Block_FluidContainer();
+	public static final ItemBlock iblock_fluidcontainer = new Noria_ItemBlock(block_fluidcontainer);
 	public static final Block block_debarkedwood = new Block_DebarkedWood();
 	public static final ItemBlock iblock_debarkedwood = new Noria_ItemBlock(block_debarkedwood);
 	public static final Block block_treetap = new Block_Treetap();
@@ -60,8 +59,6 @@ public class RegBlocks {
 	
 	public static final Block block_temp = new Block_temp();
 	public static final ItemBlock iblock_temp = new Noria_ItemBlock(block_temp);
-	public static final Block block_temp2 = new Block_temp2();
-	public static final ItemBlock iblock_temp2 = new Noria_ItemBlock(block_temp2);
 	
 	public static void preInit()
 	{
@@ -77,8 +74,8 @@ public class RegBlocks {
 		GameRegistry.register(block_woodpart);
 		GameRegistry.register(iblock_woodpart.setRegistryName(Noria_Blocks.WOODPART.nameItemBlock));
 		
-		GameRegistry.register(block_ceramicjar);
-		GameRegistry.register(iblock_ceramicjar.setRegistryName(Noria_Blocks.CERAMICJAR.nameItemBlock));
+		GameRegistry.register(block_fluidcontainer);
+		GameRegistry.register(iblock_fluidcontainer.setRegistryName(Noria_Blocks.FLUIDCONTAINER.nameItemBlock));
 		GameRegistry.register(block_debarkedwood);
 		GameRegistry.register(iblock_debarkedwood.setRegistryName(Noria_Blocks.DEBARKEDWOOD.nameItemBlock));
 		GameRegistry.register(block_treetap);
@@ -100,8 +97,6 @@ public class RegBlocks {
 		
 		GameRegistry.register(block_temp);
 		GameRegistry.register(iblock_temp.setRegistryName(Noria_Blocks.TEMP.nameItemBlock));
-		GameRegistry.register(block_temp2);
-		GameRegistry.register(iblock_temp2.setRegistryName(Noria_Blocks.TEMP2.nameItemBlock));
 	}
 	
 }

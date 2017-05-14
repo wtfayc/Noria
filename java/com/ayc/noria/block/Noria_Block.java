@@ -7,15 +7,15 @@ import com.ayc.noria.utility.list.Noria_Blocks;
 
 public class Noria_Block extends Block
 {
-	public Noria_Block(Noria_Blocks noriablock)
+	public Noria_Block(Noria_Blocks noriaBlock)
 	{
-		super(noriablock.material);
-		this.setRegistryName(noriablock.name);
-		this.setUnlocalizedName(noriablock.nameUnlocalized);
-		this.setHardness(noriablock.hardness);
-		this.setResistance(noriablock.resistance);
-		this.setCreativeTab(noriablock.creativeTabs);
-        this.setSoundType(noriablock.soundType);
+		super(noriaBlock.material);
+		this.setRegistryName(noriaBlock.name);
+		this.setUnlocalizedName(noriaBlock.nameUnlocalized);
+		this.setHardness(noriaBlock.hardness);
+		this.setResistance(noriaBlock.resistance);
+		this.setCreativeTab(noriaBlock.creativeTabs);
+        this.setSoundType(noriaBlock.soundType);
 	}
 		
 	public String getUnlocalizedName()

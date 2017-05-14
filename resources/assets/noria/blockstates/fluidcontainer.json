@@ -1,0 +1,17 @@
+{
+"forge_marker": 1,
+"defaults": {"model": "noria:ceramicjar"},
+"variants":
+{
+"normal": [{}],
+"inventorya": [{"model": "noria:ceramicjar", "textures": {"0": "blocks/hardened_clay_stained_gray", "1": "blocks/hardened_clay", "2": "blocks/hardened_clay_stained_black"}}],
+"inventoryb": [{"model": "noria:barrel", "textures": {"0": "noria:blocks/planks_treated", "1": "blocks/iron_block"}}],
+
+"meta": 
+{
+0: {"model": "noria:ceramicjar", "textures": {"particle": "blocks/hardened_clay", "0": "blocks/hardened_clay_stained_gray", "1": "blocks/hardened_clay", "2": "blocks/hardened_clay_stained_black"}},
+1: {"model": "noria:barrel", "textures": {"particle": "noria:blocks/planks_treated", "0": "noria:blocks/planks_treated", "1": "blocks/iron_block"}}
+}
+
+}
+}

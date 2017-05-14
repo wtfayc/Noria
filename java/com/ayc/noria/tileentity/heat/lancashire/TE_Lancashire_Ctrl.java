@@ -7,6 +7,7 @@ import com.ayc.noria.API.IMSP;
 import com.ayc.noria.API.INoriaMultiblock;
 import com.ayc.noria.tileentity.heat.lancashire.Lancashire.LANCASHIRE_MSP;
 import com.ayc.noria.utility.Helper_Machine;
+import com.ayc.noria.utility.list.Noria_Subitems;
 
 import net.minecraft.item.ItemStack;
 import net.minecraft.tileentity.TileEntity;
@@ -17,12 +18,45 @@ public class TE_Lancashire_Ctrl extends TE_Lancashire implements ICanBeRightClic
 
 	EnumFacing facing = EnumFacing.NORTH;
 	
-	public boolean onBlockActivated (@Nullable ItemStack heldItem, EnumFacing side)
+	public boolean onBlockActivated (@Nullable ItemStack heldItem, EnumFacing side) //TODO itemstack
 	{
-		if (checkStructure()) return activateStructure();
+		if (heldItem == null) return false;
+		if (heldItem.getItem() == Noria_Subitems.TOOL_HAMMER.item && heldItem.getMetadata() == Noria_Subitems.TOOL_HAMMER.meta) if (checkStructure()) return activateStructure();
+		if (heldItem.getItem() == Noria_Subitems.PART_BOILER_WATER_LEVEL.item && heldItem.getMetadata() == Noria_Subitems.PART_BOILER_WATER_LEVEL.meta)
+		{
+			if (this.state == 15)
+			{
+				setState(16);
+				markDirty();
+				return true;
+			}
+			if (this.state == 16)
+			{
+				setState(15);
+				markDirty();
+				return true;
+			}
+			return false;
+		}
+		if (heldItem.getItem() == Noria_Subitems.PART_BOILER_GAUGE.item && heldItem.getMetadata() == Noria_Subitems.PART_BOILER_GAUGE.meta)
+		{
+			if (this.part == 7)
+			{
+				setPart(8);
+				markDirty();
+				return true;
+			}
+			if (this.part >= 8 && this.part <= 11)
+			{
+				setPart(7);
+				markDirty();
+				return true;
+			}
+			return false;
+		}
 		return false;
 	}
-		
+
 	private boolean checkStructure()
 	{
 		for (Lancashire lancashire : Lancashire.values())

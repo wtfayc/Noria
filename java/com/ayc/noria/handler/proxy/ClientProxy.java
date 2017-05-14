@@ -1,6 +1,7 @@
 package com.ayc.noria.handler.proxy;
 
 import com.ayc.noria.handler.registry.RegBlocks;
+import com.ayc.noria.handler.registry.RegItems;
 import com.ayc.noria.handler.render.TESR_Millstone;
 import com.ayc.noria.handler.render.TESR_MillstoneRed;
 import com.ayc.noria.handler.render.TESR_Noria;
@@ -10,6 +11,7 @@ import com.ayc.noria.tileentity.rotary.TE_MillstoneRed;
 import com.ayc.noria.tileentity.water.TE_Noria;
 import com.ayc.noria.tileentity.water.TE_Undershot;
 import com.ayc.noria.utility.list.Noria_Blocks;
+import com.ayc.noria.utility.list.Noria_Subitems;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.RenderItem;
@@ -86,8 +88,10 @@ public class ClientProxy extends CommonProxy{
 		ModelLoader.setCustomModelResourceLocation((Item)RegBlocks.iblock_woodpart, 6, new ModelResourceLocation(Noria_Blocks.WOODPART.nameRegistry, "inventoryg"));
 		renderItem.getItemModelMesher().register((Item)RegBlocks.iblock_woodpart, 6, new ModelResourceLocation(Noria_Blocks.WOODPART.nameRegistry, "inventoryg"));
 		
-		ModelLoader.setCustomModelResourceLocation((Item)RegBlocks.iblock_ceramicjar, 0, new ModelResourceLocation(Noria_Blocks.CERAMICJAR.nameRegistry, "inventory"));
-		renderItem.getItemModelMesher().register((Item)RegBlocks.iblock_ceramicjar, 0, new ModelResourceLocation(Noria_Blocks.CERAMICJAR.nameRegistry, "inventory"));
+		ModelLoader.setCustomModelResourceLocation((Item)RegBlocks.iblock_fluidcontainer, 0, new ModelResourceLocation(Noria_Blocks.FLUIDCONTAINER.nameRegistry, "inventorya"));
+		renderItem.getItemModelMesher().register((Item)RegBlocks.iblock_fluidcontainer, 0, new ModelResourceLocation(Noria_Blocks.FLUIDCONTAINER.nameRegistry, "inventorya"));
+		ModelLoader.setCustomModelResourceLocation((Item)RegBlocks.iblock_fluidcontainer, 1, new ModelResourceLocation(Noria_Blocks.FLUIDCONTAINER.nameRegistry, "inventoryb"));
+		renderItem.getItemModelMesher().register((Item)RegBlocks.iblock_fluidcontainer, 1, new ModelResourceLocation(Noria_Blocks.FLUIDCONTAINER.nameRegistry, "inventoryb"));
 		
 		ModelLoader.setCustomModelResourceLocation((Item)RegBlocks.iblock_debarkedwood, 0, new ModelResourceLocation(Noria_Blocks.DEBARKEDWOOD.nameRegistry, "inventorya"));
 		renderItem.getItemModelMesher().register((Item)RegBlocks.iblock_debarkedwood, 0, new ModelResourceLocation(Noria_Blocks.DEBARKEDWOOD.nameRegistry, "inventorya"));
@@ -201,10 +205,16 @@ public class ClientProxy extends CommonProxy{
 		renderItem.getItemModelMesher().register((Item)RegBlocks.iblock_temp, 14, new ModelResourceLocation(Noria_Blocks.TEMP.nameRegistry, "inventoryo"));
 		ModelLoader.setCustomModelResourceLocation((Item)RegBlocks.iblock_temp, 15, new ModelResourceLocation(Noria_Blocks.TEMP.nameRegistry, "inventoryp"));
 		renderItem.getItemModelMesher().register((Item)RegBlocks.iblock_temp, 15, new ModelResourceLocation(Noria_Blocks.TEMP.nameRegistry, "inventoryp"));
-		
-		ModelLoader.setCustomModelResourceLocation((Item)RegBlocks.iblock_temp2, 0, new ModelResourceLocation(Noria_Blocks.TEMP2.nameRegistry, "inventorya"));
-		renderItem.getItemModelMesher().register((Item)RegBlocks.iblock_temp2, 0, new ModelResourceLocation(Noria_Blocks.TEMP2.nameRegistry, "inventorya"));
 
+		
+		ModelLoader.setCustomModelResourceLocation(RegItems.item_part, 0, new ModelResourceLocation(Noria_Subitems.PART_BOILER_WATER_LEVEL.resourceLocation, "inventory"));
+		renderItem.getItemModelMesher().register(RegItems.item_part, 0, new ModelResourceLocation(Noria_Subitems.PART_BOILER_WATER_LEVEL.resourceLocation, "inventory"));
+		ModelLoader.setCustomModelResourceLocation(RegItems.item_part, 1, new ModelResourceLocation(Noria_Subitems.PART_BOILER_GAUGE.resourceLocation, "inventory"));
+		renderItem.getItemModelMesher().register(RegItems.item_part, 1, new ModelResourceLocation(Noria_Subitems.PART_BOILER_GAUGE.resourceLocation, "inventory"));
+		
+		ModelLoader.setCustomModelResourceLocation(RegItems.item_tool, 0, new ModelResourceLocation(Noria_Subitems.TOOL_HAMMER.resourceLocation, "inventory"));
+		renderItem.getItemModelMesher().register(RegItems.item_tool, 0, new ModelResourceLocation(Noria_Subitems.TOOL_HAMMER.resourceLocation, "inventory"));
+		
 	}
 	
 	private void initRenderTileEntities()

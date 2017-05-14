@@ -54,10 +54,10 @@
 5: { "submodel": { "door_closed": {"model": "noria:lancashire/lancashire_ash_doorclosed"}}},
 6: { "submodel": { "door_opened": {"model": "noria:lancashire/lancashire_ash_dooropened"}}},
 7: { "submodel": { "central_plug_two": {"model": "noria:lancashire/lancashire_central_plug2", "textures": {"0": "noria:blocks/metal_bronze"}}}},
-8: { "submodel": { "gauge_1": {"model": "noria:lancashire/lancashire_gauge1", "textures": {"0": "noria:blocks/metal_bronze", "1": "blocks/lancashire_gauge"}}}},
-9: { "submodel": { "gauge_2": {"model": "noria:lancashire/lancashire_gauge2", "textures": {"0": "noria:blocks/metal_bronze", "1": "blocks/lancashire_gauge"}}}},
-10: { "submodel": { "gauge_3": {"model": "noria:lancashire/lancashire_gauge3", "textures": {"0": "noria:blocks/metal_bronze", "1": "blocks/lancashire_gauge"}}}},
-11: { "submodel": { "gauge_4": {"model": "noria:lancashire/lancashire_gauge4", "textures": {"0": "noria:blocks/metal_bronze", "1": "blocks/lancashire_gauge"}}}}
+8: { "submodel": { "gauge_1": {"model": "noria:lancashire/lancashire_gauge1", "textures": {"0": "noria:blocks/metal_bronze", "1": "noria:blocks/lancashire_gauge"}}}},
+9: { "submodel": { "gauge_2": {"model": "noria:lancashire/lancashire_gauge2", "textures": {"0": "noria:blocks/metal_bronze", "1": "noria:blocks/lancashire_gauge"}}}},
+10: { "submodel": { "gauge_3": {"model": "noria:lancashire/lancashire_gauge3", "textures": {"0": "noria:blocks/metal_bronze", "1": "noria:blocks/lancashire_gauge"}}}},
+11: { "submodel": { "gauge_4": {"model": "noria:lancashire/lancashire_gauge4", "textures": {"0": "noria:blocks/metal_bronze", "1": "noria:blocks/lancashire_gauge"}}}}
 },
 
 "content":

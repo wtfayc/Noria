@@ -1,9 +1,8 @@
-package com.ayc.noria.block;
+package com.ayc.noria.block.nature;
 
 import java.util.List;
 
-import com.ayc.noria.tileentity.heat.lancashire.TE_Lancashire;
-import com.ayc.noria.utility.list.Noria_Blocks;
+import javax.annotation.Nullable;
 
 import net.minecraft.block.properties.IProperty;
 import net.minecraft.block.properties.PropertyInteger;
@@ -13,38 +12,30 @@ import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.tileentity.TileEntity;
-import net.minecraft.util.BlockRenderLayer;
+import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
+import net.minecraft.world.World;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
-public class Block_temp2 extends Noria_Block {
+import com.ayc.noria.API.IMSP;
+import com.ayc.noria.block.Noria_Block;
+import com.ayc.noria.utility.list.Noria_Blocks;
 
-	public static final PropertyInteger META = PropertyInteger.create("meta", 0, 4);
-	public static final PropertyInteger STATE = PropertyInteger.create("state", 0, 1);
-	
-	public Block_temp2() 
-	{
-		super(Noria_Blocks.TEMP2);
-	}
+public class Block_FluidContainer extends Noria_Block{
 
-	@Override
-	public IBlockState getActualState(IBlockState state, IBlockAccess worldIn, BlockPos pos)
-    {
-        return state.withProperty(STATE, getState(worldIn, pos));
-    }
+	public static final PropertyInteger META = PropertyInteger.create("meta", 0, 1);
 	
-	private int getState (IBlockAccess worldIn, BlockPos pos)
+	public Block_FluidContainer() 
 	{
-		if (getMetaFromState(worldIn.getBlockState(pos)) == 3) return 1;
-		return 0;
+		super(Noria_Blocks.FLUIDCONTAINER);
 	}
-	
+		
 	@Override
     protected BlockStateContainer createBlockState()
     {
-        return new BlockStateContainer(this, new IProperty[] {META, STATE});
+        return new BlockStateContainer(this, new IProperty[] {META});
     }
     
 	@Override
@@ -67,13 +58,24 @@ public class Block_temp2 extends Noria_Block {
     
     @Override
     @SideOnly(Side.CLIENT)
-    public void getSubBlocks(Item itemIn, CreativeTabs tab, List list)
+    public void getSubBlocks(Item itemIn, CreativeTabs tab, List<ItemStack> list)
     {
-    	for (int i = 0; i < 5; i++) list.add(new ItemStack(itemIn, 1, i));
+    	for (int i = 0; i < 2; i++) list.add(new ItemStack(itemIn, 1, i));
     }
 	
-    //---Render---
-    @Override
+	 //---Render---
+    public AxisAlignedBB getBoundingBox(IBlockState state, IBlockAccess source, BlockPos pos)
+    {
+        return new AxisAlignedBB(0.0625D, 0.0D, 0.0625D, 0.9375D, 1.0D, 0.9375D);
+    }
+
+    @Nullable
+    public AxisAlignedBB getCollisionBoundingBox(IBlockState blockState, World worldIn, BlockPos pos)
+    {
+    	return new AxisAlignedBB(0.0625D, 0.0D, 0.0625D, 0.9375D, 1.0D, 0.9375D);
+    }
+	
+	@Override
     public boolean isOpaqueCube(IBlockState state)
     {
         return false;
@@ -90,12 +92,4 @@ public class Block_temp2 extends Noria_Block {
     {
         return false;
     }
-
-	@Override
-	@SideOnly(Side.CLIENT)
-    public BlockRenderLayer getBlockLayer()
-    {
-        return BlockRenderLayer.CUTOUT;
-    }
-    
 }
