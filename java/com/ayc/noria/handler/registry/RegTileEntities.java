@@ -1,5 +1,7 @@
 package com.ayc.noria.handler.registry;
 
+import com.ayc.noria.tileentity.heat.TE_SafetyValve;
+import com.ayc.noria.tileentity.heat.firebox.TE_Firebox_Steel;
 import com.ayc.noria.tileentity.heat.lancashire.TE_Lancashire;
 import com.ayc.noria.tileentity.heat.lancashire.TE_Lancashire_Ash;
 import com.ayc.noria.tileentity.heat.lancashire.TE_Lancashire_Chimney;
@@ -33,6 +35,8 @@ public class RegTileEntities {
 		GameRegistry.registerTileEntity(TE_Lancashire_Valve.class, "noria_te_lacanshirevalve");
 		GameRegistry.registerTileEntity(TE_Lancashire_Maintenance.class, "noria_te_lacanshiremaintenance");
 		GameRegistry.registerTileEntity(TE_Lancashire_Chimney.class, "noria_te_lacanshirechimney");
+		GameRegistry.registerTileEntity(TE_Firebox_Steel.class, "noria_te_fireboxsteel");
+		GameRegistry.registerTileEntity(TE_SafetyValve.class, "noria_te_safetyvalve");
 	}
 	
 	

@@ -20,6 +20,9 @@ public enum Noria_Blocks {
 	WORLDGEN (Material.ROCK, "worldgen", "worldgen", 2.0F, 10.0F, Noria_CreativeTabs.NORIA_BASE_TAB, SoundType.STONE), //TODO Values
 	STATEMACHINE (Material.ROCK, "statemachine", "statemachine", 2.0F, 10.0F, Noria_CreativeTabs.NORIA_BASE_TAB, SoundType.STONE), //TODO Values
 	LANCASHIRE (Material.ROCK, "lancashire", "lancashire", 2.0F, 10.0F, Noria_CreativeTabs.NORIA_BASE_TAB, SoundType.STONE), //TODO Values
+	CHIMNEY (Material.ROCK, "chimney", "chimney", 2.0F, 10.0F, Noria_CreativeTabs.NORIA_BASE_TAB, SoundType.STONE), //TODO Values
+	FIREBOX (Material.ROCK, "firebox", "firebox", 2.0F, 10.0F, Noria_CreativeTabs.NORIA_BASE_TAB, SoundType.STONE), //TODO Values
+	STEAMPIPES (Material.ROCK, "steampipes", "steampipes", 2.0F, 10.0F, Noria_CreativeTabs.NORIA_BASE_TAB, SoundType.STONE), //TODO Values
 
 	TEMP (Material.ROCK, "temp", "temp", 2.0F, 10.0F, Noria_CreativeTabs.NORIA_TEMP_TAB, SoundType.STONE), //TODO Values
 	TEMP2 (Material.ROCK, "temp2", "temp2", 2.0F, 10.0F, Noria_CreativeTabs.NORIA_TEMP_TAB, SoundType.STONE), //TODO Values

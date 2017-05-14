@@ -1,0 +1,17 @@
+{
+"forge_marker": 1,
+"defaults": { "model": "noria:void"},
+"variants": 
+{
+"normal": [{}],
+"inventorya": [{ "model": "noria:steam_safety_valve"}],
+"inventoryb": [{ "model": "noria:steam_safety_valve"}],
+
+"meta": 
+{
+0: {"model": "noria:steam_safety_valve"},
+1: {"model": "noria:steam_safety_valve"}
+}
+
+}
+}

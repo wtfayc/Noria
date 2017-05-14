@@ -3,10 +3,8 @@ package com.ayc.noria.block.heat;
 import java.util.List;
 
 import com.ayc.noria.block.Noria_Block;
-import com.ayc.noria.tileentity.rotary.TE_MillstoneBot;
 import com.ayc.noria.utility.list.Noria_Blocks;
 
-import net.minecraft.block.ITileEntityProvider;
 import net.minecraft.block.properties.IProperty;
 import net.minecraft.block.properties.PropertyInteger;
 import net.minecraft.block.state.BlockStateContainer;
@@ -14,20 +12,18 @@ import net.minecraft.block.state.IBlockState;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
-import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
-import net.minecraft.world.World;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
-public class Block_StateMachine extends Noria_Block {
+public class Block_Chimney extends Noria_Block {
 
-	public static final PropertyInteger META = PropertyInteger.create("meta", 0, 1);
+	public static final PropertyInteger META = PropertyInteger.create("meta", 0, 7);
 	
-	public Block_StateMachine() 
+	public Block_Chimney() 
 	{
-		super(Noria_Blocks.STATEMACHINE);
+		super(Noria_Blocks.CHIMNEY);
 	}
 
 	@Override
@@ -58,7 +54,7 @@ public class Block_StateMachine extends Noria_Block {
     @SideOnly(Side.CLIENT)
     public void getSubBlocks(Item itemIn, CreativeTabs tab, List list)
     {
-    	for (int i = 0; i < 2; i++) list.add(new ItemStack(itemIn, 1, i));
+    	for (int i = 0; i < 8; i++) list.add(new ItemStack(itemIn, 1, i));
     }
 	
     //---Render---

@@ -6,15 +6,11 @@
 "normal": [{}],
 "inventorya": [{ "model": "noria:kiln_small", "textures": {"0": "blocks/clay"}}],
 "inventoryb": [{ "model": "noria:kiln_small", "textures": {"0": "blocks/hardened_clay"}}],
-"inventoryc": [{ "model": "noria:firebox_combustion", "textures": {"0": "blocks/furnace_side", "1": "blocks/furnace_top", "2": "blocks/piston_inner", "3": "blocks/stone_slab_side"}}],
-"inventoryd": [{ "model": "noria:firebox_combustion", "textures": {"0": "blocks/brick", "1": "blocks/brick", "2": "blocks/piston_inner", "3": "blocks/brick"}}],
 
 "meta": 
 {
 0: {"model": "noria:kiln_small", "textures": {"0": "blocks/clay"}},
-1: {"model": "noria:kiln_small", "textures": {"particle": "blocks/hardened_clay", "0": "blocks/hardened_clay"}},
-2: {"model": "noria:firebox_combustion", "textures": {"particle": "blocks/cobblestone", "0": "blocks/furnace_side", "1": "blocks/furnace_top", "2": "blocks/piston_inner", "3": "blocks/stone_slab_side"}},
-3: {"model": "noria:firebox_combustion", "textures": {"particle": "blocks/brick", "0": "blocks/brick", "1": "blocks/brick", "2": "blocks/piston_inner", "3": "blocks/brick"}}
+1: {"model": "noria:kiln_small", "textures": {"particle": "blocks/hardened_clay", "0": "blocks/hardened_clay"}}
 }
 
 }

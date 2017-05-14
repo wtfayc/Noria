@@ -1,5 +1,5 @@
 {
-    "parent":"noria:block/kiln_small",
+    "parent":"noria:block/steam_safety_valve",
     "display": {
         "thirdperson": {
             "rotation": [ 10, -45, 170 ],

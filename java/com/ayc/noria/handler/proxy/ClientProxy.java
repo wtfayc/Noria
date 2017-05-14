@@ -124,10 +124,6 @@ public class ClientProxy extends CommonProxy{
 		renderItem.getItemModelMesher().register((Item)RegBlocks.iblock_statemachine, 0, new ModelResourceLocation(Noria_Blocks.STATEMACHINE.nameRegistry, "inventorya"));
 		ModelLoader.setCustomModelResourceLocation((Item)RegBlocks.iblock_statemachine, 1, new ModelResourceLocation(Noria_Blocks.STATEMACHINE.nameRegistry, "inventoryb"));
 		renderItem.getItemModelMesher().register((Item)RegBlocks.iblock_statemachine, 1, new ModelResourceLocation(Noria_Blocks.STATEMACHINE.nameRegistry, "inventoryb"));
-		ModelLoader.setCustomModelResourceLocation((Item)RegBlocks.iblock_statemachine, 2, new ModelResourceLocation(Noria_Blocks.STATEMACHINE.nameRegistry, "inventoryc"));
-		renderItem.getItemModelMesher().register((Item)RegBlocks.iblock_statemachine, 2, new ModelResourceLocation(Noria_Blocks.STATEMACHINE.nameRegistry, "inventoryc"));
-		ModelLoader.setCustomModelResourceLocation((Item)RegBlocks.iblock_statemachine, 3, new ModelResourceLocation(Noria_Blocks.STATEMACHINE.nameRegistry, "inventoryd"));
-		renderItem.getItemModelMesher().register((Item)RegBlocks.iblock_statemachine, 3, new ModelResourceLocation(Noria_Blocks.STATEMACHINE.nameRegistry, "inventoryd"));
 		
 		ModelLoader.setCustomModelResourceLocation((Item)RegBlocks.iblock_lancashire, 0, new ModelResourceLocation(Noria_Blocks.LANCASHIRE.nameRegistry, "inventorya"));
 		renderItem.getItemModelMesher().register((Item)RegBlocks.iblock_lancashire, 0, new ModelResourceLocation(Noria_Blocks.LANCASHIRE.nameRegistry, "inventorya"));
@@ -143,6 +139,35 @@ public class ClientProxy extends CommonProxy{
 		renderItem.getItemModelMesher().register((Item)RegBlocks.iblock_lancashire, 5, new ModelResourceLocation(Noria_Blocks.LANCASHIRE.nameRegistry, "inventoryf"));
 		ModelLoader.setCustomModelResourceLocation((Item)RegBlocks.iblock_lancashire, 6, new ModelResourceLocation(Noria_Blocks.LANCASHIRE.nameRegistry, "inventoryg"));
 		renderItem.getItemModelMesher().register((Item)RegBlocks.iblock_lancashire, 6, new ModelResourceLocation(Noria_Blocks.LANCASHIRE.nameRegistry, "inventoryg"));
+		
+		ModelLoader.setCustomModelResourceLocation((Item)RegBlocks.iblock_chimney, 0, new ModelResourceLocation(Noria_Blocks.CHIMNEY.nameRegistry, "inventorya"));
+		renderItem.getItemModelMesher().register((Item)RegBlocks.iblock_chimney, 0, new ModelResourceLocation(Noria_Blocks.CHIMNEY.nameRegistry, "inventorya"));
+		ModelLoader.setCustomModelResourceLocation((Item)RegBlocks.iblock_chimney, 1, new ModelResourceLocation(Noria_Blocks.CHIMNEY.nameRegistry, "inventoryb"));
+		renderItem.getItemModelMesher().register((Item)RegBlocks.iblock_chimney, 1, new ModelResourceLocation(Noria_Blocks.CHIMNEY.nameRegistry, "inventoryb"));
+		ModelLoader.setCustomModelResourceLocation((Item)RegBlocks.iblock_chimney, 2, new ModelResourceLocation(Noria_Blocks.CHIMNEY.nameRegistry, "inventoryc"));
+		renderItem.getItemModelMesher().register((Item)RegBlocks.iblock_chimney, 2, new ModelResourceLocation(Noria_Blocks.CHIMNEY.nameRegistry, "inventoryc")); 
+		ModelLoader.setCustomModelResourceLocation((Item)RegBlocks.iblock_chimney, 3, new ModelResourceLocation(Noria_Blocks.CHIMNEY.nameRegistry, "inventoryd"));
+		renderItem.getItemModelMesher().register((Item)RegBlocks.iblock_chimney, 3, new ModelResourceLocation(Noria_Blocks.CHIMNEY.nameRegistry, "inventoryd")); 
+		ModelLoader.setCustomModelResourceLocation((Item)RegBlocks.iblock_chimney, 4, new ModelResourceLocation(Noria_Blocks.CHIMNEY.nameRegistry, "inventorye"));
+		renderItem.getItemModelMesher().register((Item)RegBlocks.iblock_chimney, 4, new ModelResourceLocation(Noria_Blocks.CHIMNEY.nameRegistry, "inventorye")); 
+		ModelLoader.setCustomModelResourceLocation((Item)RegBlocks.iblock_chimney, 5, new ModelResourceLocation(Noria_Blocks.CHIMNEY.nameRegistry, "inventoryf"));
+		renderItem.getItemModelMesher().register((Item)RegBlocks.iblock_chimney, 5, new ModelResourceLocation(Noria_Blocks.CHIMNEY.nameRegistry, "inventoryf")); 
+		ModelLoader.setCustomModelResourceLocation((Item)RegBlocks.iblock_chimney, 6, new ModelResourceLocation(Noria_Blocks.CHIMNEY.nameRegistry, "inventoryg"));
+		renderItem.getItemModelMesher().register((Item)RegBlocks.iblock_chimney, 6, new ModelResourceLocation(Noria_Blocks.CHIMNEY.nameRegistry, "inventoryg")); 
+		ModelLoader.setCustomModelResourceLocation((Item)RegBlocks.iblock_chimney, 7, new ModelResourceLocation(Noria_Blocks.CHIMNEY.nameRegistry, "inventoryh"));
+		renderItem.getItemModelMesher().register((Item)RegBlocks.iblock_chimney, 7, new ModelResourceLocation(Noria_Blocks.CHIMNEY.nameRegistry, "inventoryh")); 
+				
+		ModelLoader.setCustomModelResourceLocation((Item)RegBlocks.iblock_firebox, 0, new ModelResourceLocation(Noria_Blocks.FIREBOX.nameRegistry, "inventorya"));
+		renderItem.getItemModelMesher().register((Item)RegBlocks.iblock_firebox, 0, new ModelResourceLocation(Noria_Blocks.FIREBOX.nameRegistry, "inventorya"));
+		ModelLoader.setCustomModelResourceLocation((Item)RegBlocks.iblock_firebox, 1, new ModelResourceLocation(Noria_Blocks.FIREBOX.nameRegistry, "inventoryb"));
+		renderItem.getItemModelMesher().register((Item)RegBlocks.iblock_firebox, 1, new ModelResourceLocation(Noria_Blocks.FIREBOX.nameRegistry, "inventoryb"));
+		ModelLoader.setCustomModelResourceLocation((Item)RegBlocks.iblock_firebox, 2, new ModelResourceLocation(Noria_Blocks.FIREBOX.nameRegistry, "inventoryc"));
+		renderItem.getItemModelMesher().register((Item)RegBlocks.iblock_firebox, 2, new ModelResourceLocation(Noria_Blocks.FIREBOX.nameRegistry, "inventoryc"));
+		
+		ModelLoader.setCustomModelResourceLocation((Item)RegBlocks.iblock_steampipes, 0, new ModelResourceLocation(Noria_Blocks.STEAMPIPES.nameRegistry, "inventorya"));
+		renderItem.getItemModelMesher().register((Item)RegBlocks.iblock_steampipes, 0, new ModelResourceLocation(Noria_Blocks.STEAMPIPES.nameRegistry, "inventorya"));
+		ModelLoader.setCustomModelResourceLocation((Item)RegBlocks.iblock_steampipes, 1, new ModelResourceLocation(Noria_Blocks.STEAMPIPES.nameRegistry, "inventoryb"));
+		renderItem.getItemModelMesher().register((Item)RegBlocks.iblock_steampipes, 1, new ModelResourceLocation(Noria_Blocks.STEAMPIPES.nameRegistry, "inventoryb"));
 		
 		ModelLoader.setCustomModelResourceLocation((Item)RegBlocks.iblock_temp, 0, new ModelResourceLocation(Noria_Blocks.TEMP.nameRegistry, "inventorya"));
 		renderItem.getItemModelMesher().register((Item)RegBlocks.iblock_temp, 0, new ModelResourceLocation(Noria_Blocks.TEMP.nameRegistry, "inventorya"));

@@ -1,21 +1,43 @@
-package com.ayc.noria.tileentity.heat.lancashire;
+package com.ayc.noria.tileentity.heat.firebox;
 
+import javax.annotation.Nullable;
+
+import com.ayc.noria.API.ICanBeRightClicked;
 import com.ayc.noria.API.IMSP;
 import com.ayc.noria.API.INoriaMultiblock;
 import com.ayc.noria.tileentity.Noria_TileEntity;
 
 import net.minecraft.block.state.IBlockState;
+import net.minecraft.item.ItemStack;
 import net.minecraft.tileentity.TileEntity;
+import net.minecraft.util.EnumFacing;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 
-public class TE_Lancashire extends Noria_TileEntity implements IMSP, INoriaMultiblock{
+public class TE_Firebox_Steel extends Noria_TileEntity implements IMSP, ICanBeRightClicked, INoriaMultiblock{
 
 	protected int state = 0;
 	protected int part = 0;
 	protected int content = 0;
 	protected BlockPos masterPos;
 	protected boolean isMultiblock = false;
+	
+	public boolean onBlockActivated (@Nullable ItemStack heldItem, EnumFacing side)
+	{
+		if (this.part == 1)
+		{
+			setPart(2);
+			markDirty();
+			return true;
+		}
+		if (this.part == 2)
+		{
+			setPart(1);
+			markDirty();
+			return true;
+		}
+		return false;
+	}
 	
 	public void setState (int state)
 	{
@@ -93,5 +115,4 @@ public class TE_Lancashire extends Noria_TileEntity implements IMSP, INoriaMulti
 		super.markDirty();
 		notifyBlockUpdate();
 	}
-	
 }

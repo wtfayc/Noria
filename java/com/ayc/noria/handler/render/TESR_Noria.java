@@ -30,7 +30,7 @@ public class TESR_Noria extends TileEntitySpecialRenderer<TE_Noria>{
     {
         if (bakedModel == null) {
             try {
-                model = ModelLoaderRegistry.getModel(new ResourceLocation(Reference_Static.MOD_ID, "block/multiblock/noria.obj"));
+                model = ModelLoaderRegistry.getModel(new ResourceLocation(Reference_Static.MOD_ID, "block/obj/noria.obj"));
             } catch (Exception e) {
                 throw new RuntimeException(e);
             }

@@ -39,7 +39,9 @@
 11: {"model": "noria:lancashire/lancashire_corner_top", "y": 180, "textures": {"particle": "blocks/brick", "0": "noria:blocks/metal_steel"}},
 12: {"model": "noria:lancashire/lancashire_mudvalve", "textures": {"particle": "blocks/brick", "0": "blocks/brick", "1": "noria:blocks/metal_steel", "2": "blocks/hopper_inside"}},
 13: {"model": "noria:lancashire/lancashire_brick_chimney", "textures": {"particle": "noria:blocks/metal_steel", "0": "noria:blocks/metal_steel"}},
-14: {"model": "noria:lancashire/lancashire_brick_chimney", "x": 270, "textures": {"particle": "noria:blocks/metal_steel", "0": "noria:blocks/metal_steel"}}
+14: {"model": "noria:lancashire/lancashire_brick_chimney", "x": 270, "textures": {"particle": "noria:blocks/metal_steel", "0": "noria:blocks/metal_steel"}},
+15: {"submodel": { "central_plug_one": {"model": "noria:lancashire/lancashire_central_plug1", "textures": {"0": "noria:blocks/metal_bronze"}}}},
+16: {"submodel": { "water_level": {"model": "noria:lancashire/lancashire_waterlevel", "textures": {"0": "noria:blocks/metal_bronze", "1": "blocks/glass"}}}}
 },
 
 "part":
@@ -50,7 +52,27 @@
 3: { "submodel": { "mdoor_closed": {"model": "noria:lancashire/lancashire_maintenance_doorclosed"}}},
 4: { "submodel": { "mdoor_opened": {"model": "noria:lancashire/lancashire_maintenance_dooropened"}}},
 5: { "submodel": { "door_closed": {"model": "noria:lancashire/lancashire_ash_doorclosed"}}},
-6: { "submodel": { "door_opened": {"model": "noria:lancashire/lancashire_ash_dooropened"}}}
+6: { "submodel": { "door_opened": {"model": "noria:lancashire/lancashire_ash_dooropened"}}},
+7: { "submodel": { "central_plug_two": {"model": "noria:lancashire/lancashire_central_plug2", "textures": {"0": "noria:blocks/metal_bronze"}}}},
+8: { "submodel": { "gauge_1": {"model": "noria:lancashire/lancashire_gauge1", "textures": {"0": "noria:blocks/metal_bronze", "1": "blocks/lancashire_gauge"}}}},
+9: { "submodel": { "gauge_2": {"model": "noria:lancashire/lancashire_gauge2", "textures": {"0": "noria:blocks/metal_bronze", "1": "blocks/lancashire_gauge"}}}},
+10: { "submodel": { "gauge_3": {"model": "noria:lancashire/lancashire_gauge3", "textures": {"0": "noria:blocks/metal_bronze", "1": "blocks/lancashire_gauge"}}}},
+11: { "submodel": { "gauge_4": {"model": "noria:lancashire/lancashire_gauge4", "textures": {"0": "noria:blocks/metal_bronze", "1": "blocks/lancashire_gauge"}}}}
+},
+
+"content":
+{
+0: {},
+1: { "submodel": { "water_0": {"model": "noria:lancashire/lancashire_water0", "textures": {"0": "blocks/water_still"}}}},
+2: { "submodel": { "water_1": {"model": "noria:lancashire/lancashire_water1", "textures": {"0": "blocks/water_still"}}}},
+3: { "submodel": { "water_2": {"model": "noria:lancashire/lancashire_water2", "textures": {"0": "blocks/water_still"}}}},
+4: { "submodel": { "water_3": {"model": "noria:lancashire/lancashire_water3", "textures": {"0": "blocks/water_still"}}}},
+5: { "submodel": { "water_4": {"model": "noria:lancashire/lancashire_water4", "textures": {"0": "blocks/water_still"}}}},
+6: { "submodel": { "water_5": {"model": "noria:lancashire/lancashire_water5", "textures": {"0": "blocks/water_still"}}}},
+7: { "submodel": { "water_6": {"model": "noria:lancashire/lancashire_water6", "textures": {"0": "blocks/water_still"}}}},
+8: { "submodel": { "water_7": {"model": "noria:lancashire/lancashire_water7", "textures": {"0": "blocks/water_still"}}}},
+9: { "submodel": { "water_8": {"model": "noria:lancashire/lancashire_water8", "textures": {"0": "blocks/water_still"}}}},
+10: { "submodel": { "water_9": {"model": "noria:lancashire/lancashire_water9", "textures": {"0": "blocks/water_still"}}}}
 }
 
 }

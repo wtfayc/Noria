@@ -1,0 +1,43 @@
+{
+"forge_marker": 1,
+"defaults": { "model": "noria:firebox/firebox_combustion"},
+"variants": 
+{
+"normal": [{}],
+"inventorya": [{ "model": "noria:firebox/firebox_combustion", "textures": {"0": "blocks/furnace_side", "1": "blocks/furnace_top", "2": "blocks/piston_inner", "3": "blocks/stone_slab_side"}}],
+"inventoryb": [{ "model": "noria:firebox/firebox_combustion", "textures": {"0": "blocks/brick", "1": "blocks/brick", "2": "blocks/piston_inner", "3": "blocks/brick"}}],
+"inventoryc": [{ "model": "noria:firebox/firebox_steel", "textures": {"0": "noria:blocks/metal_steel", "1": "blocks/hopper_inside"}}],
+
+"meta": 
+{
+0: {"model": "noria:firebox/firebox_combustion", "textures": {"particle": "blocks/cobblestone", "0": "blocks/furnace_side", "1": "blocks/furnace_top", "2": "blocks/piston_inner", "3": "blocks/stone_slab_side"}},
+1: {"model": "noria:firebox/firebox_combustion", "textures": {"particle": "blocks/brick", "0": "blocks/brick", "1": "blocks/brick", "2": "blocks/piston_inner", "3": "blocks/brick"}},
+2: {"model": "noria:firebox/firebox_steel", "textures": {"particle": "noria:blocks/metal_steel", "0": "noria:blocks/metal_steel", "1": "blocks/hopper_inside"}}
+},
+
+"state":
+{
+0: {},
+1: {}
+},
+
+"part":
+{
+0: {},
+1: { "submodel": { "steel_door_closed": {"model": "noria:firebox/firebox_steel_doorclosed", "textures": {"0": "blocks/door_iron_lower"}}}},
+2: { "submodel": { "steel_door_opened": {"model": "noria:firebox/firebox_steel_dooropened", "textures": {"0": "blocks/door_iron_lower"}}}}
+},
+
+"content":
+{
+0: {},
+1: { "submodel": { "log1": {"model": "noria:firebox/firebox_steel_log1"}}},
+2: { "submodel": { "log2": {"model": "noria:firebox/firebox_steel_log2"}}},
+3: { "submodel": { "log3": {"model": "noria:firebox/firebox_steel_log3"}}},
+4: { "submodel": { "coal1": {"model": "noria:firebox/firebox_steel_coal1"}}},
+5: { "submodel": { "coal2": {"model": "noria:firebox/firebox_steel_coal2"}}},
+6: { "submodel": { "coal3": {"model": "noria:firebox/firebox_steel_coal3"}}}
+}
+
+}
+}

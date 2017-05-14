@@ -28,7 +28,7 @@ public class TESR_Undershot extends TileEntitySpecialRenderer<TE_Undershot>{
     {
         if (bakedModel == null) {
             try {
-                model = ModelLoaderRegistry.getModel(new ResourceLocation(Reference_Static.MOD_ID, "block/multiblock/undershot.obj"));
+                model = ModelLoaderRegistry.getModel(new ResourceLocation(Reference_Static.MOD_ID, "block/obj/undershot.obj"));
             } catch (Exception e) {
                 throw new RuntimeException(e);
             }

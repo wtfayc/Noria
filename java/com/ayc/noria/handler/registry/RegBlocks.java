@@ -2,8 +2,11 @@ package com.ayc.noria.handler.registry;
 
 import com.ayc.noria.block.Block_temp;
 import com.ayc.noria.block.Block_temp2;
+import com.ayc.noria.block.heat.Block_Chimney;
+import com.ayc.noria.block.heat.Block_Firebox;
 import com.ayc.noria.block.heat.Block_Lancashire;
 import com.ayc.noria.block.heat.Block_StateMachine;
+import com.ayc.noria.block.heat.Block_Steampipes;
 import com.ayc.noria.block.nature.Block_CeramicJar;
 import com.ayc.noria.block.nature.Block_DebarkedWood;
 import com.ayc.noria.block.nature.Block_Treetap;
@@ -48,6 +51,12 @@ public class RegBlocks {
 	public static final ItemBlock iblock_statemachine = new Noria_ItemBlock(block_statemachine);
 	public static final Block block_lancashire = new Block_Lancashire();
 	public static final ItemBlock iblock_lancashire = new Noria_ItemBlock(block_lancashire);
+	public static final Block block_chimney = new Block_Chimney();
+	public static final ItemBlock iblock_chimney = new Noria_ItemBlock(block_chimney);
+	public static final Block block_firebox = new Block_Firebox();
+	public static final ItemBlock iblock_firebox = new Noria_ItemBlock(block_firebox);
+	public static final Block block_steampipes = new Block_Steampipes();
+	public static final ItemBlock iblock_steampipes = new Noria_ItemBlock(block_steampipes);
 	
 	public static final Block block_temp = new Block_temp();
 	public static final ItemBlock iblock_temp = new Noria_ItemBlock(block_temp);
@@ -82,6 +91,12 @@ public class RegBlocks {
 		GameRegistry.register(iblock_statemachine.setRegistryName(Noria_Blocks.STATEMACHINE.nameItemBlock));
 		GameRegistry.register(block_lancashire);
 		GameRegistry.register(iblock_lancashire.setRegistryName(Noria_Blocks.LANCASHIRE.nameItemBlock));
+		GameRegistry.register(block_chimney);
+		GameRegistry.register(iblock_chimney.setRegistryName(Noria_Blocks.CHIMNEY.nameItemBlock));
+		GameRegistry.register(block_firebox);
+		GameRegistry.register(iblock_firebox.setRegistryName(Noria_Blocks.FIREBOX.nameItemBlock));
+		GameRegistry.register(block_steampipes);
+		GameRegistry.register(iblock_steampipes.setRegistryName(Noria_Blocks.STEAMPIPES.nameItemBlock));
 		
 		GameRegistry.register(block_temp);
 		GameRegistry.register(iblock_temp.setRegistryName(Noria_Blocks.TEMP.nameItemBlock));
