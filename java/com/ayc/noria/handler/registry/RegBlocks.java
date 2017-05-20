@@ -10,7 +10,9 @@ import com.ayc.noria.block.nature.Block_FluidContainer;
 import com.ayc.noria.block.nature.Block_DebarkedWood;
 import com.ayc.noria.block.nature.Block_Treetap;
 import com.ayc.noria.block.nature.Block_Worldgen;
+import com.ayc.noria.block.rotary.Block_RotaryGenerator;
 import com.ayc.noria.block.rotary.Block_RotaryMachine;
+import com.ayc.noria.block.rotary.Block_RotaryShaft;
 import com.ayc.noria.block.rotary.Block_StaticMachine;
 import com.ayc.noria.block.rotary.Block_WoodPart;
 import com.ayc.noria.block.water.Block_Canal;
@@ -31,6 +33,10 @@ public class RegBlocks {
 	
 	public static final Block block_rotarymachine = new Block_RotaryMachine();
 	public static final ItemBlock iblock_rotarymachine = new Noria_ItemBlock(block_rotarymachine);
+	public static final Block block_rotarygenerator = new Block_RotaryGenerator();
+	public static final ItemBlock iblock_rotarygenerator = new Noria_ItemBlock(block_rotarygenerator);
+	public static final Block block_rotaryshaft = new Block_RotaryShaft();
+	public static final ItemBlock iblock_rotaryshaft = new Noria_ItemBlock(block_rotaryshaft);
 	public static final Block block_staticmachine = new Block_StaticMachine();
 	public static final ItemBlock iblock_staticmachine = new Noria_ItemBlock(block_staticmachine);
 	public static final Block block_woodpart = new Block_WoodPart();
@@ -69,6 +75,10 @@ public class RegBlocks {
 		
 		GameRegistry.register(block_rotarymachine);
 		GameRegistry.register(iblock_rotarymachine.setRegistryName(Noria_Blocks.ROTARYMACHINE.nameItemBlock));
+		GameRegistry.register(block_rotarygenerator);
+		GameRegistry.register(iblock_rotarygenerator.setRegistryName(Noria_Blocks.ROTARYGENERATOR.nameItemBlock));
+		GameRegistry.register(block_rotaryshaft);
+		GameRegistry.register(iblock_rotaryshaft.setRegistryName(Noria_Blocks.ROTARYSHAFT.nameItemBlock));
 		GameRegistry.register(block_staticmachine);
 		GameRegistry.register(iblock_staticmachine.setRegistryName(Noria_Blocks.STATICMACHINE.nameItemBlock));
 		GameRegistry.register(block_woodpart);

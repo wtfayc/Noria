@@ -11,6 +11,9 @@ import com.ayc.noria.tileentity.heat.lancashire.TE_Lancashire_Valve;
 import com.ayc.noria.tileentity.rotary.TE_Millstone;
 import com.ayc.noria.tileentity.rotary.TE_MillstoneBot;
 import com.ayc.noria.tileentity.rotary.TE_MillstoneRed;
+import com.ayc.noria.tileentity.rotary.TE_Panemone;
+import com.ayc.noria.tileentity.rotary.TE_PanemoneShaft;
+import com.ayc.noria.tileentity.rotary.TE_RotaryShaft;
 import com.ayc.noria.tileentity.water.TE_Noria;
 import com.ayc.noria.tileentity.water.TE_Canal;
 import com.ayc.noria.tileentity.water.TE_Undershot;
@@ -28,6 +31,9 @@ public class RegTileEntities {
 		GameRegistry.registerTileEntity(TE_Millstone.class, "noria_te_millstone");
 		GameRegistry.registerTileEntity(TE_MillstoneRed.class, "noria_te_millstonered");
 		GameRegistry.registerTileEntity(TE_MillstoneBot.class, "noria_te_millstonebot");
+		GameRegistry.registerTileEntity(TE_Panemone.class, "noria_te_panemone");
+		GameRegistry.registerTileEntity(TE_PanemoneShaft.class, "noria_te_panemoneshaft");
+		GameRegistry.registerTileEntity(TE_RotaryShaft.class, "noria_te_rotaryshaft");
 		
 		GameRegistry.registerTileEntity(TE_Lancashire.class, "noria_te_lacanshire");
 		GameRegistry.registerTileEntity(TE_Lancashire_Ctrl.class, "noria_te_lacanshirectrl");

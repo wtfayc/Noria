@@ -1,0 +1,17 @@
+{
+"forge_marker": 1,
+"defaults": { "model": "noria:void"},
+"variants": 
+{
+"normal": [{}],
+"inventorya": [{ "model": "noria:panemone/panemone_shaft"}],
+"inventoryb": [{ "model": "noria:obj/panemone.obj", "transform": {"scale": 0.2, "rotation": [{"x": 45}]}}],
+
+"meta": 
+{
+0: {"model": "noria:panemone/panemone_shaft"},
+1: {"model": "noria:void"}
+}
+
+}
+}

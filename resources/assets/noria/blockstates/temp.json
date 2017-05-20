@@ -11,15 +11,15 @@
 "inventorye": [{ "model": "noria:lancashire/lancashire_brick_right"}],
 "inventoryf": [{ "model": "noria:lancashire/lancashire_corner_botleft"}],
 "inventoryg": [{ "model": "noria:lancashire/lancashire_corner_botright"}],
-"inventoryh": [{ "model": "noria:lancashire/lancashire_maintenance"}],
-"inventoryi": [{ "model": "noria:lancashire/lancashire_corner_top"}],
-"inventoryj": [{ "model": "noria:lancashire/lancashire_corner_top", "y": 180}],
-"inventoryk": [{ "model": "noria:block"}],
-"inventoryl": [{ "model": "noria:block", "textures": {"0": "blocks/brick"}}],
-"inventorym": [{ "model": "noria:lancashire/lancashire_brick_chimney", "textures": {"0": "noria:blocks/metal_steel"}}],
-"inventoryn": [{ "model": "noria:lancashire/lancashire_mudvalve"}],
-"inventoryo": [{ "model": "noria:lancashire/lancashire_ash"}],
-"inventoryp": [{ "model": "noria:lancashire/lancashire_central"}],
+"inventoryh": [{ "model": "noria:lancashire/lancashire_brick_botleft"}],
+"inventoryi": [{ "model": "noria:lancashire/lancashire_brick_botleft"}],
+"inventoryj": [{ "model": "noria:lancashire/lancashire_brick_botleft"}],
+"inventoryk": [{ "model": "noria:lancashire/lancashire_brick_botleft"}],
+"inventoryl": [{ "model": "noria:lancashire/lancashire_brick_botleft"}],
+"inventorym": [{ "model": "noria:lancashire/lancashire_brick_botleft"}],
+"inventoryn": [{ "model": "noria:lancashire/lancashire_brick_botleft"}],
+"inventoryo": [{ "model": "noria:lancashire/lancashire_brick_botleft"}],
+"inventoryp": [{ "model": "noria:lancashire/lancashire_brick_botleft"}],
 
 "meta": 
 {
@@ -30,15 +30,15 @@
 4: {"model": "noria:lancashire/lancashire_brick_right"},
 5: {"model": "noria:lancashire/lancashire_corner_botleft"},
 6: {"model": "noria:lancashire/lancashire_corner_botright"},
-7: {"model": "noria:lancashire/lancashire_maintenance"},
-8: {"model": "noria:lancashire/lancashire_corner_top"},
-9: {"model": "noria:lancashire/lancashire_corner_top", "y": 180},
-10: {"model": "noria:block"},
-11: {"model": "noria:block", "textures": {"particle": "blocks/brick", "0": "blocks/brick"}},
-12: {"model": "noria:lancashire/lancashire_brick_chimney", "textures": {"particle": "noria:blocks/metal_steel", "0": "noria:blocks/metal_steel"}},
-13: {"model": "noria:lancashire/lancashire_mudvalve"},
-14: {"model": "noria:lancashire/lancashire_ash"},
-15: {"model": "noria:lancashire/lancashire_central"}
+7: {"model": "noria:lancashire/lancashire_brick_botleft"},
+8: {"model": "noria:lancashire/lancashire_brick_botleft"},
+9: {"model": "noria:lancashire/lancashire_brick_botleft"},
+10: {"model": "noria:lancashire/lancashire_brick_botleft"},
+11: {"model": "noria:lancashire/lancashire_brick_botleft"},
+12: {"model": "noria:lancashire/lancashire_brick_botleft"},
+13: {"model": "noria:lancashire/lancashire_brick_botleft"},
+14: {"model": "noria:lancashire/lancashire_brick_botleft"},
+15: {"model": "noria:lancashire/lancashire_brick_botleft"}
 }
 
 }

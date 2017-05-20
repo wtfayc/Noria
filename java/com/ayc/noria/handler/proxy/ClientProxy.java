@@ -5,9 +5,15 @@ import com.ayc.noria.handler.registry.RegItems;
 import com.ayc.noria.handler.render.TESR_Millstone;
 import com.ayc.noria.handler.render.TESR_MillstoneRed;
 import com.ayc.noria.handler.render.TESR_Noria;
+import com.ayc.noria.handler.render.TESR_Panemone;
+import com.ayc.noria.handler.render.TESR_PanemoneShaft;
+import com.ayc.noria.handler.render.TESR_RotaryShaft;
 import com.ayc.noria.handler.render.TESR_Undershot;
 import com.ayc.noria.tileentity.rotary.TE_Millstone;
 import com.ayc.noria.tileentity.rotary.TE_MillstoneRed;
+import com.ayc.noria.tileentity.rotary.TE_Panemone;
+import com.ayc.noria.tileentity.rotary.TE_PanemoneShaft;
+import com.ayc.noria.tileentity.rotary.TE_RotaryShaft;
 import com.ayc.noria.tileentity.water.TE_Noria;
 import com.ayc.noria.tileentity.water.TE_Undershot;
 import com.ayc.noria.utility.list.Noria_Blocks;
@@ -67,6 +73,14 @@ public class ClientProxy extends CommonProxy{
 		renderItem.getItemModelMesher().register((Item)RegBlocks.iblock_rotarymachine, 0, new ModelResourceLocation(Noria_Blocks.ROTARYMACHINE.nameRegistry, "inventorya"));
 		ModelLoader.setCustomModelResourceLocation((Item)RegBlocks.iblock_rotarymachine, 1, new ModelResourceLocation(Noria_Blocks.ROTARYMACHINE.nameRegistry, "inventoryb"));
 		renderItem.getItemModelMesher().register((Item)RegBlocks.iblock_rotarymachine, 1, new ModelResourceLocation(Noria_Blocks.ROTARYMACHINE.nameRegistry, "inventoryb"));
+		
+		ModelLoader.setCustomModelResourceLocation((Item)RegBlocks.iblock_rotarygenerator, 0, new ModelResourceLocation(Noria_Blocks.ROTARYGENERATOR.nameRegistry, "inventorya"));
+		renderItem.getItemModelMesher().register((Item)RegBlocks.iblock_rotarygenerator, 0, new ModelResourceLocation(Noria_Blocks.ROTARYGENERATOR.nameRegistry, "inventorya"));
+		ModelLoader.setCustomModelResourceLocation((Item)RegBlocks.iblock_rotarygenerator, 1, new ModelResourceLocation(Noria_Blocks.ROTARYGENERATOR.nameRegistry, "inventoryb"));
+		renderItem.getItemModelMesher().register((Item)RegBlocks.iblock_rotarygenerator, 1, new ModelResourceLocation(Noria_Blocks.ROTARYGENERATOR.nameRegistry, "inventoryb"));
+		
+		ModelLoader.setCustomModelResourceLocation((Item)RegBlocks.iblock_rotaryshaft, 0, new ModelResourceLocation(Noria_Blocks.ROTARYSHAFT.nameRegistry, "inventorya"));
+		renderItem.getItemModelMesher().register((Item)RegBlocks.iblock_rotaryshaft, 0, new ModelResourceLocation(Noria_Blocks.ROTARYSHAFT.nameRegistry, "inventorya"));
 		
 		ModelLoader.setCustomModelResourceLocation((Item)RegBlocks.iblock_staticmachine, 0, new ModelResourceLocation(Noria_Blocks.STATICMACHINE.nameRegistry, "inventorya"));
 		renderItem.getItemModelMesher().register((Item)RegBlocks.iblock_staticmachine, 0, new ModelResourceLocation(Noria_Blocks.STATICMACHINE.nameRegistry, "inventorya"));
@@ -223,6 +237,9 @@ public class ClientProxy extends CommonProxy{
 		ClientRegistry.bindTileEntitySpecialRenderer(TE_Undershot.class, new TESR_Undershot());
 		ClientRegistry.bindTileEntitySpecialRenderer(TE_Millstone.class, new TESR_Millstone());
 		ClientRegistry.bindTileEntitySpecialRenderer(TE_MillstoneRed.class, new TESR_MillstoneRed());
+		ClientRegistry.bindTileEntitySpecialRenderer(TE_Panemone.class, new TESR_Panemone());
+		ClientRegistry.bindTileEntitySpecialRenderer(TE_PanemoneShaft.class, new TESR_PanemoneShaft());
+		ClientRegistry.bindTileEntitySpecialRenderer(TE_RotaryShaft.class, new TESR_RotaryShaft());
 	}
 	
 	

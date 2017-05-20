@@ -2,8 +2,14 @@ package com.ayc.noria.block.rotary;
 
 import java.util.List;
 
+import com.ayc.noria.block.Noria_Block;
+import com.ayc.noria.tileentity.rotary.TE_RotaryShaft;
+import com.ayc.noria.utility.list.Noria_Blocks;
+
+import net.minecraft.block.Block;
 import net.minecraft.block.ITileEntityProvider;
 import net.minecraft.block.properties.IProperty;
+import net.minecraft.block.properties.PropertyBool;
 import net.minecraft.block.properties.PropertyInteger;
 import net.minecraft.block.state.BlockStateContainer;
 import net.minecraft.block.state.IBlockState;
@@ -19,27 +25,40 @@ import net.minecraft.world.World;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
-import com.ayc.noria.block.Noria_Block;
-import com.ayc.noria.tileentity.rotary.TE_Millstone;
-import com.ayc.noria.tileentity.rotary.TE_MillstoneRed;
-import com.ayc.noria.tileentity.rotary.TE_Panemone;
-import com.ayc.noria.tileentity.water.TE_Noria;
-import com.ayc.noria.tileentity.water.TE_Undershot;
-import com.ayc.noria.utility.list.Noria_Blocks;
+public class Block_RotaryShaft  extends Noria_Block implements ITileEntityProvider{
 
-public class Block_RotaryMachine extends Noria_Block implements ITileEntityProvider{
-
+	public static final PropertyBool NORTH = PropertyBool.create("north");
+    public static final PropertyBool EAST = PropertyBool.create("east");
+    public static final PropertyBool SOUTH = PropertyBool.create("south");
+    public static final PropertyBool WEST = PropertyBool.create("west");
 	public static final PropertyInteger META = PropertyInteger.create("meta", 0, 1);
 	
-	public Block_RotaryMachine() 
+	public Block_RotaryShaft() 
 	{
-		super(Noria_Blocks.ROTARYMACHINE);
+		super(Noria_Blocks.ROTARYSHAFT);
 	}
 
 	@Override
+	public IBlockState getActualState(IBlockState state, IBlockAccess worldIn, BlockPos pos)
+    {
+        return state
+        		.withProperty(NORTH, Boolean.valueOf(this.canConnectTo(worldIn, pos.north(), EnumFacing.NORTH)))
+        		.withProperty(EAST, Boolean.valueOf(this.canConnectTo(worldIn, pos.east(), EnumFacing.EAST)))
+        		.withProperty(SOUTH, Boolean.valueOf(this.canConnectTo(worldIn, pos.south(), EnumFacing.SOUTH)))
+        		.withProperty(WEST, Boolean.valueOf(this.canConnectTo(worldIn, pos.west(), EnumFacing.WEST)));
+    }
+	
+	public boolean canConnectTo (IBlockAccess worldIn, BlockPos pos, EnumFacing side)
+	{
+		IBlockState iblockstate = worldIn.getBlockState(pos);
+        Block block = iblockstate.getBlock();
+        return (block.isSideSolid(iblockstate, worldIn, pos, side));
+	}
+	
+	@Override
     protected BlockStateContainer createBlockState()
     {
-        return new BlockStateContainer(this, new IProperty[] {META});
+        return new BlockStateContainer(this, new IProperty[] {NORTH, EAST, WEST, SOUTH, META});
     }
     
 	@Override
@@ -104,8 +123,7 @@ public class Block_RotaryMachine extends Noria_Block implements ITileEntityProvi
 	{
 		switch (meta)
 		{
-			default : 	return new TE_Millstone();
-			case 1 :	return new TE_MillstoneRed();
+			default : 	return new TE_RotaryShaft();
 		}
 	}
 }

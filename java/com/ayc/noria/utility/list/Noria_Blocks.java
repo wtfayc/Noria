@@ -12,6 +12,8 @@ public enum Noria_Blocks {
 	CANAL 			(Material.ROCK, "canal", "canal", 2.0F, 10.0F, Noria_CreativeTabs.NORIA_BASE_TAB, SoundType.STONE), //TODO Values
 	NORIA 			(Material.ROCK, "noria", "noria", 2.0F, 10.0F, Noria_CreativeTabs.NORIA_BASE_TAB, SoundType.STONE), //TODO Values
 	ROTARYMACHINE 	(Material.ROCK, "rotarymachine", "rotarymachine", 2.0F, 10.0F, Noria_CreativeTabs.NORIA_BASE_TAB, SoundType.STONE), //TODO Values
+	ROTARYGENERATOR (Material.ROCK, "rotarygenerator", "rotarygenerator", 2.0F, 10.0F, Noria_CreativeTabs.NORIA_BASE_TAB, SoundType.STONE), //TODO Values
+	ROTARYSHAFT		(Material.ROCK, "rotaryshaft", "rotaryshaft", 2.0F, 10.0F, Noria_CreativeTabs.NORIA_BASE_TAB, SoundType.STONE), //TODO Values
 	STATICMACHINE 	(Material.ROCK, "staticmachine", "staticmachine", 2.0F, 10.0F, Noria_CreativeTabs.NORIA_BASE_TAB, SoundType.STONE), //TODO Values
 	WOODPART 		(Material.ROCK, "woodpart", "woodpart", 2.0F, 10.0F, Noria_CreativeTabs.NORIA_BASE_TAB, SoundType.STONE), //TODO Values
 	DEBARKEDWOOD 	(Material.ROCK, "debarkedwood", "debarkedwood", 2.0F, 10.0F, Noria_CreativeTabs.NORIA_TECH_TAB, SoundType.STONE), //TODO Values

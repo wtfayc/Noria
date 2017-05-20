@@ -2,6 +2,11 @@ package com.ayc.noria.block.rotary;
 
 import java.util.List;
 
+import com.ayc.noria.block.Noria_Block;
+import com.ayc.noria.tileentity.rotary.TE_Panemone;
+import com.ayc.noria.tileentity.rotary.TE_PanemoneShaft;
+import com.ayc.noria.utility.list.Noria_Blocks;
+
 import net.minecraft.block.ITileEntityProvider;
 import net.minecraft.block.properties.IProperty;
 import net.minecraft.block.properties.PropertyInteger;
@@ -19,21 +24,13 @@ import net.minecraft.world.World;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
-import com.ayc.noria.block.Noria_Block;
-import com.ayc.noria.tileentity.rotary.TE_Millstone;
-import com.ayc.noria.tileentity.rotary.TE_MillstoneRed;
-import com.ayc.noria.tileentity.rotary.TE_Panemone;
-import com.ayc.noria.tileentity.water.TE_Noria;
-import com.ayc.noria.tileentity.water.TE_Undershot;
-import com.ayc.noria.utility.list.Noria_Blocks;
-
-public class Block_RotaryMachine extends Noria_Block implements ITileEntityProvider{
+public class Block_RotaryGenerator extends Noria_Block implements ITileEntityProvider{
 
 	public static final PropertyInteger META = PropertyInteger.create("meta", 0, 1);
 	
-	public Block_RotaryMachine() 
+	public Block_RotaryGenerator() 
 	{
-		super(Noria_Blocks.ROTARYMACHINE);
+		super(Noria_Blocks.ROTARYGENERATOR);
 	}
 
 	@Override
@@ -104,8 +101,8 @@ public class Block_RotaryMachine extends Noria_Block implements ITileEntityProvi
 	{
 		switch (meta)
 		{
-			default : 	return new TE_Millstone();
-			case 1 :	return new TE_MillstoneRed();
+			default : 	return new TE_PanemoneShaft();
+			case 1 : 	return new TE_Panemone();
 		}
 	}
 }
