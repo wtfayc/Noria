@@ -28,4 +28,11 @@ public class Helper_Machine {
 		return pos;
 	}
 	
+	/**Translate pitch to EnumFacing above or below angle else NORTH*/
+	public static EnumFacing getEnumFacingFromPitch (int angle, float pitch)
+	{
+		if (pitch <= -angle) return EnumFacing.UP;
+		if (pitch >= angle) return EnumFacing.DOWN;
+		return EnumFacing.NORTH;
+	}
 }

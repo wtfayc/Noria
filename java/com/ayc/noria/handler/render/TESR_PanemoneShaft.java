@@ -50,14 +50,11 @@ public class TESR_PanemoneShaft extends TileEntitySpecialRenderer<TE_PanemoneSha
 
         GlStateManager.translate(0.5, 0, 0.5);
         //float angle = (float) te.getTick();
-        long angle = (System.currentTimeMillis() / 50) % 360;
+        long angle = (System.currentTimeMillis() / 20) % 360;
         GlStateManager.rotate(angle, 0, 1, 0);
         GlStateManager.translate(-0.5, 0, -0.5);
 
         RenderHelper.disableStandardItemLighting();
-        //this.bindTexture(new ResourceLocation(Reference_Static.MOD_ID, "textures/blocks/planks_treated.png"));TextureMap.LOCATION_BLOCKS_TEXTURE
-        //Minecraft.getMinecraft().renderEngine.bindTexture(TextureMap.LOCATION_BLOCKS_TEXTURE);
-        //this.bindTexture(new ResourceLocation(Reference_Static.MOD_ID, "blocks/planks_treated"));
         this.bindTexture(TextureMap.LOCATION_BLOCKS_TEXTURE);
         if (Minecraft.isAmbientOcclusionEnabled()) {
             GlStateManager.shadeModel(GL11.GL_SMOOTH);

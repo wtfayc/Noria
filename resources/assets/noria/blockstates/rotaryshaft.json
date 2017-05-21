@@ -4,27 +4,48 @@
 "variants": 
 {
 "normal": [{}],
-"inventorya": [{ "model": "noria:obj/rotaryshaft.obj"}],
+"inventorya": [{ "model": "noria:obj/rotaryshaftjoint.obj"}],
+
+"up": 
+{
+0: {},
+1: {"submodel": {"up1": {"model": "noria:shaftsupport", "x": 270}}},
+2: {"submodel": {"up2": {"model": "noria:shaftsupport", "x": 270, "y": 90}}}
+},
+
+"down": 
+{
+0: {},
+1: {"submodel": {"down1": {"model": "noria:shaftsupport", "x": 90}}},
+2: {"submodel": {"down2": {"model": "noria:shaftsupport", "x": 90, "y": 90}}}
+},
 
 "north": 
 {
-"true": { "submodel": { "side0": { "model": "noria:shaftsupport"}}},
-"false": {}
+0: {},
+1: {"submodel": {"north1": {"model": "noria:shaftsupport"}}},
+2: {"submodel": {"north2": {"model": "noria:shaftsupport2"}}}
 },
+
 "south": 
 {
-"true": { "submodel": { "side1": { "model": "noria:shaftsupport", "y": 180 }}},
-"false": {}
+0: {},
+1: {"submodel": {"south1": {"model": "noria:shaftsupport", "y": 180}}},
+2: {"submodel": {"south2": {"model": "noria:shaftsupport2", "y": 180}}}
 },
+
 "west": 
 {
-"true": { "submodel": { "side2": { "model": "noria:shaftsupport", "y": 270 }}},
-"false": {}
+0: {},
+1: {"submodel": {"west1": {"model": "noria:shaftsupport", "y": 270}}},
+2: {"submodel": {"west2": {"model": "noria:shaftsupport2", "y": 270}}}
 },
+
 "east": 
 {
-"true": { "submodel": { "side3": { "model": "noria:shaftsupport", "y": 90 }}},
-"false": {}
+0: {},
+1: {"submodel": {"east1": {"model": "noria:shaftsupport", "y": 90}}},
+2: {"submodel": {"east2": {"model": "noria:shaftsupport2", "y": 90}}}
 },
 
 "meta": 

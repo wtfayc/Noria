@@ -50,7 +50,7 @@ public class TESR_MillstoneRed extends TileEntitySpecialRenderer<TE_MillstoneRed
 
         GlStateManager.translate(0.5, 0, 0.5);
         //float angle = (float) te.getTick();
-        long angle = (System.currentTimeMillis() / 50) % 360;
+        long angle = (System.currentTimeMillis() / 20) % 360;
         GlStateManager.rotate(angle, 0, 1, 0);
         GlStateManager.translate(-0.5, 0, -0.5);
 

@@ -2,6 +2,7 @@ package com.ayc.noria.block.rotary;
 
 import java.util.List;
 
+import com.ayc.noria.API.IRotationHandler;
 import com.ayc.noria.block.Noria_Block;
 import com.ayc.noria.tileentity.rotary.TE_RotaryShaft;
 import com.ayc.noria.utility.list.Noria_Blocks;
@@ -9,7 +10,6 @@ import com.ayc.noria.utility.list.Noria_Blocks;
 import net.minecraft.block.Block;
 import net.minecraft.block.ITileEntityProvider;
 import net.minecraft.block.properties.IProperty;
-import net.minecraft.block.properties.PropertyBool;
 import net.minecraft.block.properties.PropertyInteger;
 import net.minecraft.block.state.BlockStateContainer;
 import net.minecraft.block.state.IBlockState;
@@ -27,10 +27,12 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 
 public class Block_RotaryShaft  extends Noria_Block implements ITileEntityProvider{
 
-	public static final PropertyBool NORTH = PropertyBool.create("north");
-    public static final PropertyBool EAST = PropertyBool.create("east");
-    public static final PropertyBool SOUTH = PropertyBool.create("south");
-    public static final PropertyBool WEST = PropertyBool.create("west");
+	public static final PropertyInteger UP = PropertyInteger.create("up", 0, 2);
+	public static final PropertyInteger DOWN = PropertyInteger.create("down", 0, 2);
+	public static final PropertyInteger NORTH = PropertyInteger.create("north", 0, 2);
+    public static final PropertyInteger EAST = PropertyInteger.create("east", 0, 2);
+    public static final PropertyInteger SOUTH = PropertyInteger.create("south", 0, 2);
+    public static final PropertyInteger WEST = PropertyInteger.create("west", 0, 2);
 	public static final PropertyInteger META = PropertyInteger.create("meta", 0, 1);
 	
 	public Block_RotaryShaft() 
@@ -42,23 +44,47 @@ public class Block_RotaryShaft  extends Noria_Block implements ITileEntityProvid
 	public IBlockState getActualState(IBlockState state, IBlockAccess worldIn, BlockPos pos)
     {
         return state
-        		.withProperty(NORTH, Boolean.valueOf(this.canConnectTo(worldIn, pos.north(), EnumFacing.NORTH)))
-        		.withProperty(EAST, Boolean.valueOf(this.canConnectTo(worldIn, pos.east(), EnumFacing.EAST)))
-        		.withProperty(SOUTH, Boolean.valueOf(this.canConnectTo(worldIn, pos.south(), EnumFacing.SOUTH)))
-        		.withProperty(WEST, Boolean.valueOf(this.canConnectTo(worldIn, pos.west(), EnumFacing.WEST)));
+        		.withProperty(UP, canConnectTo(worldIn, pos, EnumFacing.UP))
+        		.withProperty(DOWN, canConnectTo(worldIn, pos, EnumFacing.DOWN))
+        		.withProperty(NORTH, canConnectTo(worldIn, pos, EnumFacing.NORTH))
+        		.withProperty(EAST, canConnectTo(worldIn, pos, EnumFacing.EAST))
+        		.withProperty(SOUTH, canConnectTo(worldIn, pos, EnumFacing.SOUTH))
+        		.withProperty(WEST, canConnectTo(worldIn, pos, EnumFacing.WEST));
     }
 	
-	public boolean canConnectTo (IBlockAccess worldIn, BlockPos pos, EnumFacing side)
+	public int canConnectTo (IBlockAccess worldIn, BlockPos pos, EnumFacing side)
 	{
-		IBlockState iblockstate = worldIn.getBlockState(pos);
+		IBlockState iblockstate = worldIn.getBlockState(pos.offset(side));
         Block block = iblockstate.getBlock();
-        return (block.isSideSolid(iblockstate, worldIn, pos, side));
+        TileEntity tileEntity = worldIn.getTileEntity(pos);
+        if (tileEntity == null) return 0;
+		if (tileEntity instanceof IRotationHandler && block.isBlockSolid(worldIn, pos.offset(side), side.getOpposite()))
+		{
+			int facing = ((IRotationHandler) tileEntity).getFacing();
+			if (facing == 0 || facing == 1)
+			{
+				if (side == EnumFacing.UP || side == EnumFacing.DOWN) return 0;
+				return 1;
+			}
+			if (facing == 2 || facing == 3)
+			{
+				if (side == EnumFacing.UP || side == EnumFacing.DOWN) return 1;
+				if (side == EnumFacing.WEST || side == EnumFacing.EAST) return 2;
+				return 0;
+			}
+			if (facing == 4 || facing == 5)
+			{
+				if (side == EnumFacing.WEST || side == EnumFacing.EAST) return 0;
+				return 2;
+			}
+		}
+		return 0;
 	}
 	
 	@Override
     protected BlockStateContainer createBlockState()
     {
-        return new BlockStateContainer(this, new IProperty[] {NORTH, EAST, WEST, SOUTH, META});
+        return new BlockStateContainer(this, new IProperty[] {UP, DOWN, NORTH, EAST, WEST, SOUTH, META});
     }
     
 	@Override

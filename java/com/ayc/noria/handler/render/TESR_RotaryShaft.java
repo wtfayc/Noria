@@ -10,6 +10,7 @@ import net.minecraft.client.renderer.GlStateManager;
 import net.minecraft.client.renderer.RenderHelper;
 import net.minecraft.client.renderer.Tessellator;
 import net.minecraft.client.renderer.block.model.IBakedModel;
+import net.minecraft.client.renderer.texture.TextureMap;
 import net.minecraft.client.renderer.tileentity.TileEntitySpecialRenderer;
 import net.minecraft.client.renderer.vertex.DefaultVertexFormats;
 import net.minecraft.util.ResourceLocation;
@@ -49,12 +50,25 @@ public class TESR_RotaryShaft extends TileEntitySpecialRenderer<TE_RotaryShaft>{
 
         GlStateManager.translate(0.5, 0, 0.5);
         //float angle = (float) te.getTick();
-        long angle = (System.currentTimeMillis() / 50) % 360;
+        long angle = (System.currentTimeMillis() / 20) % 360;
         GlStateManager.rotate(angle, 0, 1, 0);
+        
+        //TODO facing 
+        
+        int facing = te.getFacing();
+        switch (facing)
+        {
+        	case 2:		 	GlStateManager.rotate(90, 1, 0, 0);		break;
+        	case 3:		    GlStateManager.rotate(270, 1, 0, 0);	break;
+        	case 4:		    GlStateManager.rotate(90, 0, 0, 1);		break;
+        	case 5:         GlStateManager.rotate(270, 0, 0, 1);	break;
+        	default: 		break; 
+        }
+        
         GlStateManager.translate(-0.5, 0, -0.5);
 
         RenderHelper.disableStandardItemLighting();
-        this.bindTexture(new ResourceLocation("noria:textures/blocks/planks_treated.png"));
+        this.bindTexture(TextureMap.LOCATION_BLOCKS_TEXTURE);
         if (Minecraft.isAmbientOcclusionEnabled()) {
             GlStateManager.shadeModel(GL11.GL_SMOOTH);
         } else {
@@ -64,6 +78,8 @@ public class TESR_RotaryShaft extends TileEntitySpecialRenderer<TE_RotaryShaft>{
         World world = te.getWorld();
         GlStateManager.translate(-te.getPos().getX(), -te.getPos().getY(), -te.getPos().getZ());
 
+
+        
         Tessellator tessellator = Tessellator.getInstance();
         tessellator.getBuffer().begin(GL11.GL_QUADS, DefaultVertexFormats.BLOCK);
         Minecraft.getMinecraft().getBlockRendererDispatcher().getBlockModelRenderer().renderModel(
