@@ -33,6 +33,7 @@ public class Block_RotaryShaft  extends Noria_Block implements ITileEntityProvid
     public static final PropertyInteger EAST = PropertyInteger.create("east", 0, 2);
     public static final PropertyInteger SOUTH = PropertyInteger.create("south", 0, 2);
     public static final PropertyInteger WEST = PropertyInteger.create("west", 0, 2);
+    //public static final PropertyInteger MULTI = PropertyInteger.create("multi", 0, 3);
 	public static final PropertyInteger META = PropertyInteger.create("meta", 0, 1);
 	
 	public Block_RotaryShaft() 
@@ -50,6 +51,8 @@ public class Block_RotaryShaft  extends Noria_Block implements ITileEntityProvid
         		.withProperty(EAST, canConnectTo(worldIn, pos, EnumFacing.EAST))
         		.withProperty(SOUTH, canConnectTo(worldIn, pos, EnumFacing.SOUTH))
         		.withProperty(WEST, canConnectTo(worldIn, pos, EnumFacing.WEST));
+
+		//.withProperty(MULTI, canConnectTo(worldIn, pos, EnumFacing.NORTH))
     }
 	
 	public int canConnectTo (IBlockAccess worldIn, BlockPos pos, EnumFacing side)
@@ -80,7 +83,24 @@ public class Block_RotaryShaft  extends Noria_Block implements ITileEntityProvid
 		}
 		return 0;
 	}
-	
+	/*
+	public int hasMultiConnect (IBlockAccess worldIn, BlockPos pos, IBlockState state)
+	{
+		TileEntity tileEntity = worldIn.getTileEntity(pos);
+        if (tileEntity == null) return 0;
+        if (tileEntity instanceof IRotationHandler)
+        {
+        	if (state.getValue(UP) > 0 || state.getValue(DOWN) > 0 || state.getValue(NORTH) > 0 || state.getValue(EAST) > 0 || state.getValue(SOUTH) > 0 || state.getValue(WEST) > 0)
+        	{
+            	int facing = ((IRotationHandler) tileEntity).getFacing();
+        		if (facing == 0 || facing == 1) return 1;
+        		if (facing == 2 || facing == 3) return 2;
+        		if (facing == 4 || facing == 5) return 3;
+        	}
+        }
+        return 0;
+	}
+	*/
 	@Override
     protected BlockStateContainer createBlockState()
     {
@@ -127,6 +147,12 @@ public class Block_RotaryShaft  extends Noria_Block implements ITileEntityProvid
 
     @Override
     public boolean isPassable(IBlockAccess worldIn, BlockPos pos)
+    {
+        return false;
+    }
+    
+    @Override
+    public boolean isBlockSolid(IBlockAccess worldIn, BlockPos pos, EnumFacing side)
     {
         return false;
     }

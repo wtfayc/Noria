@@ -48,24 +48,26 @@ public class TESR_RotaryShaft extends TileEntitySpecialRenderer<TE_RotaryShaft>{
         
         GlStateManager.pushMatrix();
 
-        GlStateManager.translate(0.5, 0, 0.5);
+        //GlStateManager.translate(0.5, 0, 0.5);
         //float angle = (float) te.getTick();
-        long angle = (System.currentTimeMillis() / 20) % 360;
-        GlStateManager.rotate(angle, 0, 1, 0);
+        //long angle = (System.currentTimeMillis() / 20) % 360;
+        //GlStateManager.rotate(angle, 0, 1, 0);
+        //GlStateManager.translate(-0.5, 0, -0.5);
         
         //TODO facing 
         
         int facing = te.getFacing();
         switch (facing)
         {
-        	case 2:		 	GlStateManager.rotate(90, 1, 0, 0);		break;
-        	case 3:		    GlStateManager.rotate(270, 1, 0, 0);	break;
-        	case 4:		    GlStateManager.rotate(90, 0, 0, 1);		break;
-        	case 5:         GlStateManager.rotate(270, 0, 0, 1);	break;
+        	case 0:		 	GlStateManager.translate(0, 0.5, 0.5);	GlStateManager.rotate(180, 1, 0, 0);GlStateManager.translate(0, -0.5, -0.5);	break;	
+        	case 2:		 	GlStateManager.translate(0, 0.5, 0.5);	GlStateManager.rotate(270, 1, 0, 0);GlStateManager.translate(0, -0.5, -0.5);	break;
+        	case 3:		    GlStateManager.translate(0, 0.5, 0.5);	GlStateManager.rotate(90, 1, 0, 0);	GlStateManager.translate(0, -0.5, -0.5);	break;
+        	case 4:		    GlStateManager.translate(0.5, 0.5, 0);	GlStateManager.rotate(90, 0, 0, 1);	GlStateManager.translate(-0.5, -0.5, 0);	break;
+        	case 5:         GlStateManager.translate(0.5, 0.5, 0);	GlStateManager.rotate(270, 0, 0, 1);GlStateManager.translate(-0.5, -0.5, 0);	break;
         	default: 		break; 
         }
         
-        GlStateManager.translate(-0.5, 0, -0.5);
+        
 
         RenderHelper.disableStandardItemLighting();
         this.bindTexture(TextureMap.LOCATION_BLOCKS_TEXTURE);
